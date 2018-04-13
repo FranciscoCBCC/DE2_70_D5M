@@ -1,0 +1,181 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/ --output-directory=C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/ --report-file=bsf:C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C70F896C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70.qsys
+Progress: Loading QSYS/de2_70.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding Onchip_Memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module Onchip_Memory
+Progress: Adding Clock_Signals [altera_up_clocks 13.0]
+Progress: Parameterizing module Clock_Signals
+Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module Pixel_Buffer_DMA
+Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Pixel_RGB_Resampler
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: de2_70.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: de2_70.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: de2_70.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/ --output-directory=C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70.sopcinfo --report-file=html:C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70.html --report-file=qip:C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/de2_70.qip --report-file=cmp:C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C70F896C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70.qsys --language=VHDL
+Progress: Loading QSYS/de2_70.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding CPU [altera_nios2_qsys 13.0]
+Progress: Parameterizing module CPU
+Progress: Adding Onchip_Memory [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module Onchip_Memory
+Progress: Adding Clock_Signals [altera_up_clocks 13.0]
+Progress: Parameterizing module Clock_Signals
+Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module Pixel_Buffer_DMA
+Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Pixel_RGB_Resampler
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: de2_70.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: de2_70.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: de2_70.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
+Info: de2_70: Generating de2_70 "de2_70" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 10 modules, 41 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 17 modules, 69 connections
+Info: merlin_domain_transform: After transform: 29 modules, 149 connections
+Info: merlin_router_transform: After transform: 36 modules, 177 connections
+Info: reset_adaptation_transform: After transform: 39 modules, 144 connections
+Info: merlin_network_to_switch_transform: After transform: 52 modules, 172 connections
+Info: merlin_width_transform: After transform: 54 modules, 178 connections
+Info: merlin_mm_transform: After transform: 54 modules, 178 connections
+Info: merlin_interrupt_mapper_transform: After transform: 55 modules, 181 connections
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: CPU: Starting RTL generation for module 'de2_70_CPU'
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=de2_70_CPU --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7633_7173610670554087757.dir/0001_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7633_7173610670554087757.dir/0001_CPU_gen//de2_70_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: CPU: # 2018.04.12 09:19:31 (*) Starting Nios II generation
+Info: CPU: # 2018.04.12 09:19:31 (*)   Checking for plaintext license.
+Info: CPU: # 2018.04.12 09:19:32 (*)   Plaintext license not found.
+Info: CPU: # 2018.04.12 09:19:32 (*)   No license required to generate encrypted Nios II/e.
+Info: CPU: # 2018.04.12 09:19:32 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2018.04.12 09:19:32 (*)   Creating all objects for CPU
+Info: CPU: # 2018.04.12 09:19:32 (*)   Generating RTL from CPU objects
+Info: CPU: # 2018.04.12 09:19:32 (*)   Creating plain-text RTL
+Info: CPU: # 2018.04.12 09:19:34 (*) Done Nios II generation
+Info: CPU: Done RTL generation for module 'de2_70_CPU'
+Info: CPU: "de2_70" instantiated altera_nios2_qsys "CPU"
+Info: Onchip_Memory: Starting RTL generation for module 'de2_70_Onchip_Memory'
+Info: Onchip_Memory:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=de2_70_Onchip_Memory --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7633_7173610670554087757.dir/0002_Onchip_Memory_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7633_7173610670554087757.dir/0002_Onchip_Memory_gen//de2_70_Onchip_Memory_component_configuration.pl  --do_build_sim=0  ]
+Info: Onchip_Memory: Done RTL generation for module 'de2_70_Onchip_Memory'
+Info: Onchip_Memory: "de2_70" instantiated altera_avalon_onchip_memory2 "Onchip_Memory"
+Info: Clock_Signals: Starting Generation of Required Clocks for DE-Series Boards
+Info: Clock_Signals: "de2_70" instantiated altera_up_clocks "Clock_Signals"
+Info: Pixel_Buffer_DMA: Starting Generation of VGA Pixel Buffer
+Info: Pixel_Buffer_DMA: "de2_70" instantiated altera_up_avalon_video_pixel_buffer_dma "Pixel_Buffer_DMA"
+Info: Pixel_RGB_Resampler: Starting Generation of Video RGB Resampler
+Info: Pixel_RGB_Resampler: "de2_70" instantiated altera_up_avalon_video_rgb_resampler "Pixel_RGB_Resampler"
+Info: Pixel_Scaler: Starting Generation of Video Scaler
+Info: Pixel_Scaler: "de2_70" instantiated altera_up_avalon_video_scaler "Pixel_Scaler"
+Info: Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info: Dual_Clock_FIFO: "de2_70" instantiated altera_up_avalon_video_dual_clock_buffer "Dual_Clock_FIFO"
+Info: VGA_Controller: Starting Generation of VGA Controller
+Info: VGA_Controller: "de2_70" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info: Pixel_Buffer: Starting Generation of SRAM or SSRAM Controller
+Info: Pixel_Buffer: "de2_70" instantiated altera_up_avalon_sram "Pixel_Buffer"
+Info: CPU_instruction_master_translator: "de2_70" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
+Info: CPU_jtag_debug_module_translator: "de2_70" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
+Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "de2_70" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "de2_70" instantiated altera_merlin_slave_agent "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "de2_70" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "de2_70" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "de2_70" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "de2_70" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "de2_70" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "de2_70" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "de2_70" instantiated altera_merlin_router "id_router_003"
+Info: rst_controller: "de2_70" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "de2_70" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "de2_70" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "de2_70" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "de2_70" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_mux: "de2_70" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "de2_70" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "de2_70" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "de2_70" instantiated altera_irq_mapper "irq_mapper"
+Info: de2_70: Done de2_70" with 30 modules, 117 files, 2149505 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
