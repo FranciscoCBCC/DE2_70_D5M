@@ -84,8 +84,8 @@ module de2_70_Pixel_Buffer_DMA (
  *****************************************************************************/
 
 // Parameters
-parameter DEFAULT_BUFFER_ADDRESS		= 32'd134217728;
-parameter DEFAULT_BACK_BUF_ADDRESS	= 32'd134217728;
+parameter DEFAULT_BUFFER_ADDRESS		= 32'd67108864;
+parameter DEFAULT_BACK_BUF_ADDRESS	= 32'd67108864;
 
 parameter WW						= 8;  // Image width's address width
 parameter HW						= 7;  // Image height's address width

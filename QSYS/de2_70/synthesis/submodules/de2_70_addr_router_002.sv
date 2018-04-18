@@ -50,9 +50,9 @@ module de2_70_addr_router_002_default_decode
                DEFAULT_DESTID = 4 
    )
   (output [76 - 74 : 0] default_destination_id,
-   output [6-1 : 0] default_wr_channel,
-   output [6-1 : 0] default_rd_channel,
-   output [6-1 : 0] default_src_channel
+   output [8-1 : 0] default_wr_channel,
+   output [8-1 : 0] default_rd_channel,
+   output [8-1 : 0] default_src_channel
   );
 
   assign default_destination_id = 
@@ -63,7 +63,7 @@ module de2_70_addr_router_002_default_decode
       assign default_src_channel = '0;
     end
     else begin
-      assign default_src_channel = 6'b1 << DEFAULT_CHANNEL;
+      assign default_src_channel = 8'b1 << DEFAULT_CHANNEL;
     end
   end
   endgenerate
@@ -74,8 +74,8 @@ module de2_70_addr_router_002_default_decode
       assign default_rd_channel = '0;
     end
     else begin
-      assign default_wr_channel = 6'b1 << DEFAULT_WR_CHANNEL;
-      assign default_rd_channel = 6'b1 << DEFAULT_RD_CHANNEL;
+      assign default_wr_channel = 8'b1 << DEFAULT_WR_CHANNEL;
+      assign default_rd_channel = 8'b1 << DEFAULT_RD_CHANNEL;
     end
   end
   endgenerate
@@ -105,7 +105,7 @@ module de2_70_addr_router_002
     // -------------------
     output                          src_valid,
     output reg [87-1    : 0] src_data,
-    output reg [6-1 : 0] src_channel,
+    output reg [8-1 : 0] src_channel,
     output                          src_startofpacket,
     output                          src_endofpacket,
     input                           src_ready
@@ -121,7 +121,7 @@ module de2_70_addr_router_002
     localparam PKT_PROTECTION_H = 80;
     localparam PKT_PROTECTION_L = 78;
     localparam ST_DATA_W = 87;
-    localparam ST_CHANNEL_W = 6;
+    localparam ST_CHANNEL_W = 8;
     localparam DECODER_TYPE = 0;
 
     localparam PKT_TRANS_WRITE = 52;
@@ -136,13 +136,13 @@ module de2_70_addr_router_002
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h200000 - 64'h0); 
+    localparam PAD0 = log2ceil(64'h4200000 - 64'h4000000); 
     // -------------------------------------------------------
     // Work out which address bits are significant based on the
     // address range of the slaves. If the required width is too
     // large or too small, we use the address field width instead.
     // -------------------------------------------------------
-    localparam ADDR_RANGE = 64'h200000;
+    localparam ADDR_RANGE = 64'h4200000;
     localparam RANGE_ADDR_WIDTH = log2ceil(ADDR_RANGE);
     localparam OPTIMIZED_ADDR_H = (RANGE_ADDR_WIDTH > PKT_ADDR_W) ||
                                   (RANGE_ADDR_WIDTH == 0) ?
@@ -161,7 +161,7 @@ module de2_70_addr_router_002
     assign src_endofpacket   = sink_endofpacket;
 
     wire [PKT_DEST_ID_W-1:0] default_destid;
-    wire [6-1 : 0] default_src_channel;
+    wire [8-1 : 0] default_src_channel;
 
 
 
@@ -185,8 +185,8 @@ module de2_70_addr_router_002
         // --------------------------------------------------
            
          
-          // ( 0 .. 200000 )
-          src_channel = 6'b1;
+          // ( 4000000 .. 4200000 )
+          src_channel = 8'b1;
           src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 4;
 	     
         
