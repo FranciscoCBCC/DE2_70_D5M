@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE2_70_D5M
-Thu Apr 26 10:13:51 2018
+Thu Apr 26 11:46:58 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -93,8 +93,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                ; Status ; Read at                  ;
 +--------------------------------------------------------------+--------+--------------------------+
-; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Thu Apr 26 10:13:51 2018 ;
-; QSYS/de2_70/synthesis/submodules/de2_70_CPU.sdc              ; OK     ; Thu Apr 26 10:13:51 2018 ;
+; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Thu Apr 26 11:46:58 2018 ;
+; QSYS/de2_70/synthesis/submodules/de2_70_CPU.sdc              ; OK     ; Thu Apr 26 11:46:58 2018 ;
 +--------------------------------------------------------------+--------+--------------------------+
 
 
@@ -163,6 +163,7 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 2.878 ; 2.878 ;       ;
+; CLOCK_50   ; GPIO_1[16]                                   ; 6.071 ;       ;       ; 6.071 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -174,6 +175,7 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 2.878 ; 2.878 ;       ;
+; CLOCK_50   ; GPIO_1[16]                                   ; 6.071 ;       ;       ; 6.071 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -227,6 +229,7 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 1.455 ;       ;       ; 1.455 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 1.456 ;       ;       ; 1.456 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 1.560 ; 1.560 ;       ;
+; CLOCK_50   ; GPIO_1[16]                                   ; 3.235 ;       ;       ; 3.235 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -238,6 +241,7 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 1.455 ;       ;       ; 1.455 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 1.456 ;       ;       ; 1.456 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 1.560 ; 1.560 ;       ;
+; CLOCK_50   ; GPIO_1[16]                                   ; 3.235 ;       ;       ; 3.235 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -261,6 +265,7 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 2.878 ; 2.878 ;       ;
+; CLOCK_50   ; GPIO_1[16]                                   ; 6.071 ;       ;       ; 6.071 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -272,6 +277,7 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 1.455 ;       ;       ; 1.455 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 1.456 ;       ;       ; 1.456 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 1.560 ; 1.560 ;       ;
+; CLOCK_50   ; GPIO_1[16]                                   ; 3.235 ;       ;       ; 3.235 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -301,9 +307,9 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 2     ; 2    ;
 ; Unconstrained Input Ports       ; 50    ; 50   ;
-; Unconstrained Input Port Paths  ; 52    ; 52   ;
-; Unconstrained Output Ports      ; 136   ; 136  ;
-; Unconstrained Output Port Paths ; 541   ; 541  ;
+; Unconstrained Input Port Paths  ; 53    ; 53   ;
+; Unconstrained Output Ports      ; 137   ; 137  ;
+; Unconstrained Output Port Paths ; 542   ; 542  ;
 +---------------------------------+-------+------+
 
 
@@ -313,7 +319,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 26 10:13:49 2018
+    Info: Processing started: Thu Apr 26 11:46:57 2018
 Info: Command: quartus_sta DE2_70_D5M -c DE2_70_D5M
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -404,8 +410,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 510 megabytes
-    Info: Processing ended: Thu Apr 26 10:13:51 2018
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Thu Apr 26 11:46:58 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -1,5 +1,5 @@
 Flow report for DE2_70_D5M
-Thu Apr 26 10:13:51 2018
+Thu Apr 26 11:46:58 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr 26 10:13:49 2018           ;
+; Flow Status                        ; Successful - Thu Apr 26 11:46:56 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DE2_70_D5M                                      ;
 ; Top-level Entity Name              ; DE2_70_D5M                                      ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C70F896C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 4,131 / 68,416 ( 6 % )                          ;
-;     Total combinational functions  ; 3,800 / 68,416 ( 6 % )                          ;
+; Total logic elements               ; 4,130 / 68,416 ( 6 % )                          ;
+;     Total combinational functions  ; 3,802 / 68,416 ( 6 % )                          ;
 ;     Dedicated logic registers      ; 2,595 / 68,416 ( 4 % )                          ;
 ; Total registers                    ; 2664                                            ;
 ; Total pins                         ; 184 / 622 ( 30 % )                              ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/26/2018 10:13:03 ;
+; Start date & time ; 04/26/2018 11:46:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE2_70_D5M          ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+----------------------------------------------------------+---------------+---------------------------------+------------+
 ; Assignment Name                     ; Value                                                    ; Default Value ; Entity Name                     ; Section Id ;
 +-------------------------------------+----------------------------------------------------------+---------------+---------------------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 70465359729243.152474838303872                           ; --            ; --                              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 70465359729243.152475397005248                           ; --            ; --                              ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                     ; --            ; altera_avalon_sc_fifo           ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                     ; --            ; altera_merlin_burst_adapter     ; --         ;
 ; IP_TOOL_ENV                         ; Qsys                                                     ; --            ; altera_merlin_master_agent      ; --         ;
@@ -190,11 +190,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 658 MB              ; 00:00:20                           ;
-; Fitter                    ; 00:00:17     ; 1.7                     ; 1154 MB             ; 00:00:24                           ;
+; Analysis & Synthesis      ; 00:00:21     ; 1.0                     ; 646 MB              ; 00:00:20                           ;
+; Fitter                    ; 00:00:18     ; 1.7                     ; 1170 MB             ; 00:00:24                           ;
 ; Assembler                 ; 00:00:04     ; 1.0                     ; 449 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 510 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:43     ; --                      ; --                  ; 00:00:49                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 510 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:44     ; --                      ; --                  ; 00:00:49                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

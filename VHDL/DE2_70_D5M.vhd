@@ -93,26 +93,26 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
             sdram_wire_we_n                                     : out   std_logic                                         -- we_n
         );
     end component;
-	 
+
 		  BEGIN
-		  
+		  GPIO_1(16) <= CLOCK_50;
 		  NiosII : de2_70
         port map (
             clk_clk                                             => CLOCK_50,                                          				    --                               	clk.clk
             reset_reset_n                                       => KEY(0),							                                        --                               reset.reset_n
 				sdram_clk                                           => DE2_70_SDRAM_CLK,                                           		 --                               sdram.clk
 				
-            av_config_external_interface_SDAT                   => GPIO_1(25),      --VERIFICAR SE ESTÁ CORRETO							 --        av_config_external_interface.SDAT
-            av_config_external_interface_SCLK                   => GPIO_1(26),		--VERIFICAR SE ESTÁ CORRETO				   		 --                                    .SCLK
+            av_config_external_interface_SDAT                   => GPIO_1(23),      --VERIFICAR SE ESTÁ CORRETO							 --        av_config_external_interface.SDAT
+            av_config_external_interface_SCLK                   => GPIO_1(24),		--VERIFICAR SE ESTÁ CORRETO				   		 --                                    .SCLK
             video_in_decoder_external_interface_PIXEL_CLK       => GPIO_1(0),    	--VERIFICAR SE ESTÁ CORRETO				     		 -- video_in_decoder_external_interface.PIXEL_CLK
-            video_in_decoder_external_interface_LINE_VALID      => GPIO_1(23),   	--VERIFICAR SE ESTÁ CORRETO	    					 --                                    .LINE_VALID
-            video_in_decoder_external_interface_FRAME_VALID     => GPIO_1(24),		--VERIFICAR SE ESTÁ CORRETO				  		    --                                    .FRAME_VALID
+            video_in_decoder_external_interface_LINE_VALID      => GPIO_1(21),   	--VERIFICAR SE ESTÁ CORRETO	    					 --                                    .LINE_VALID
+            video_in_decoder_external_interface_FRAME_VALID     => GPIO_1(22),		--VERIFICAR SE ESTÁ CORRETO				  		    --                                    .FRAME_VALID
             video_in_decoder_external_interface_pixel_clk_reset => '1', 		 																		 --                                    .pixel_clk_reset
 				           
-				video_in_decoder_external_interface_PIXEL_DATA(0)      => GPIO_1(15),   --ESTÁ CORRETO   						 					 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(1)      => GPIO_1(14),	--ESTÁ CORRETO							 					 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(2)      => GPIO_1(13),	--ESTÁ CORRETO 							 				 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(3)      => GPIO_1(12),	--ESTÁ CORRETO							 					 --                                    .PIXEL_DATA
+				video_in_decoder_external_interface_PIXEL_DATA(0)      => GPIO_1(13),   --ESTÁ CORRETO   						 					 --                                    .PIXEL_DATA
+				video_in_decoder_external_interface_PIXEL_DATA(1)      => GPIO_1(12),	--ESTÁ CORRETO							 					 --                                    .PIXEL_DATA
+				video_in_decoder_external_interface_PIXEL_DATA(2)      => GPIO_1(11),	--ESTÁ CORRETO 							 				 --                                    .PIXEL_DATA
+				video_in_decoder_external_interface_PIXEL_DATA(3)      => GPIO_1(10),	--ESTÁ CORRETO							 					 --                                    .PIXEL_DATA
 				video_in_decoder_external_interface_PIXEL_DATA(4)      => GPIO_1(9),		--ESTÁ CORRETO											    --                                    .PIXEL_DATA
 				video_in_decoder_external_interface_PIXEL_DATA(5)      => GPIO_1(8),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
 				video_in_decoder_external_interface_PIXEL_DATA(6)      => GPIO_1(7),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
