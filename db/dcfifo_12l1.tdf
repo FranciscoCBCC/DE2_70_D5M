@@ -31,15 +31,15 @@ FUNCTION dffpipe_c2e (clock, d[0..0])
 RETURNS ( q[0..0]);
 FUNCTION dffpipe_0v8 (clock, d[7..0])
 RETURNS ( q[7..0]);
-FUNCTION alt_synch_pipe_9u7 (clock, d[7..0])
+FUNCTION alt_synch_pipe_7u7 (clock, d[7..0])
 RETURNS ( q[7..0]);
-FUNCTION alt_synch_pipe_au7 (clock, d[7..0])
+FUNCTION alt_synch_pipe_8u7 (clock, d[7..0])
 RETURNS ( q[7..0]);
 FUNCTION cmpr_s16 (dataa[7..0], datab[7..0])
 RETURNS ( aeb);
 
---synthesis_resources = lut 18 M4K 1 reg 49 
-OPTIONS ALTERA_INTERNAL_OPTION = "AUTO_SHIFT_REGISTER_RECOGNITION=OFF;REMOVE_DUPLICATE_REGISTERS=OFF;suppress_da_rule_internal=d101;suppress_da_rule_internal=d102;suppress_da_rule_internal=s102;{-to p0addr} POWER_UP_LEVEL=LOW;-name CUT ON -from rdptr_g -to ws_dgrp|dffpipe_4v8:dffpipe9|dffe10a;-name SDC_STATEMENT ""set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_4v8:dffpipe9|dffe10a* "";-name CUT ON -from delayed_wrptr_g -to rs_dgwp|dffpipe_3v8:dffpipe6|dffe7a;-name SDC_STATEMENT ""set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_3v8:dffpipe6|dffe7a* """;
+--synthesis_resources = lut 18 M4K 1 reg 115 
+OPTIONS ALTERA_INTERNAL_OPTION = "AUTO_SHIFT_REGISTER_RECOGNITION=OFF;REMOVE_DUPLICATE_REGISTERS=OFF;suppress_da_rule_internal=d101;suppress_da_rule_internal=d102;suppress_da_rule_internal=s102;{-to p0addr} POWER_UP_LEVEL=LOW;-name CUT ON -from rdptr_g -to ws_dgrp|dffpipe_2v8:dffpipe20|dffe21a;-name SDC_STATEMENT ""set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_2v8:dffpipe20|dffe21a* "";-name CUT ON -from delayed_wrptr_g -to rs_dgwp|dffpipe_1v8:dffpipe17|dffe18a;-name SDC_STATEMENT ""set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_1v8:dffpipe17|dffe18a* """;
 
 SUBDESIGN dcfifo_12l1
 ( 
@@ -72,10 +72,10 @@ VARIABLE
 	rdaclr : dffpipe_c2e;
 	rs_brp : dffpipe_0v8;
 	rs_bwp : dffpipe_0v8;
-	rs_dgwp : alt_synch_pipe_9u7;
+	rs_dgwp : alt_synch_pipe_7u7;
 	ws_brp : dffpipe_0v8;
 	ws_bwp : dffpipe_0v8;
-	ws_dgrp : alt_synch_pipe_au7;
+	ws_dgrp : alt_synch_pipe_8u7;
 	rdusedw_sub_dataa[7..0]	:	WIRE;
 	rdusedw_sub_datab[7..0]	:	WIRE;
 	rdusedw_sub_result[7..0]	:	WIRE;

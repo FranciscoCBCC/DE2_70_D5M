@@ -9,13 +9,14 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="440" />
-   <clocksource preferredWidth="439" />
-   <frequency preferredWidth="429" />
+   <clockname preferredWidth="548" />
+   <clocksource preferredWidth="547" />
+   <frequency preferredWidth="529" />
   </columns>
  </clocktable>
- <library expandedCategories="Library,Project" />
- <window width="1920" height="1040" x="0" y="0" />
+ <library
+   expandedCategories="Library/University Program/Audio &amp; Video/Video,Library/University Program,Library/University Program/Audio &amp; Video,Project,Library/Peripherals/Microcontroller Peripherals,Library/Interface Protocols/RapidIO,Library,Library/Verification,Library/Interface Protocols/SDI,Library/Interface Protocols,Library/Embedded Processors,Library/Bridges/Streaming,Library/Interface Protocols/Ethernet,Library/Interface Protocols/Ethernet/Submodules,Library/Bridges,Library/Peripherals,Library/Interface Protocols/Transceiver PHY,Library/Verification/Simulation" />
+ <window width="1936" height="1056" x="960" y="0" />
  <generation synthesis="VHDL" />
  <hdlexample language="VHDL" />
 </preferences>

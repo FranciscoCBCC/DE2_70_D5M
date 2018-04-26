@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2018.04.17.11:57:58</td>
+    <td class="l">2018.04.25.09:12:02</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -97,22 +97,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <a href="#module_Onchip_Memory"><b>Onchip_Memory</b>
      </a> altera_avalon_onchip_memory2 13.0.1.99.2
      <br/>&#160;&#160;
-     <a href="#module_Pixel_Buffer_DMA"><b>Pixel_Buffer_DMA</b>
-     </a> altera_up_avalon_video_pixel_buffer_dma 13.0
-     <br/>&#160;&#160;
-     <a href="#module_Pixel_Buffer"><b>Pixel_Buffer</b>
-     </a> altera_up_avalon_sram 13.0
-     <br/>&#160;&#160;
      <a href="#module_AV_Config"><b>AV_Config</b>
      </a> altera_up_avalon_audio_and_video_config 13.0
      <br/>&#160;&#160;
      <a href="#module_Video_DMA"><b>Video_DMA</b>
      </a> altera_up_avalon_video_dma_controller 13.0
      <br/>&#160;&#160;
-     <a href="#module_sdram"><b>sdram</b>
+     <a href="#module_Pixel_Buffer"><b>Pixel_Buffer</b>
+     </a> altera_up_avalon_sram 13.0
+     <br/>&#160;&#160;
+     <a href="#module_Pixel_Buffer_DMA"><b>Pixel_Buffer_DMA</b>
+     </a> altera_up_avalon_video_pixel_buffer_dma 13.0
+     <br/>&#160;&#160;
+     <a href="#module_SDRAM"><b>SDRAM</b>
      </a> altera_avalon_new_sdram_controller 13.0.1.99.2
      <br/>&#160;&#160;
-     <a href="#module_jtag_uart"><b>jtag_uart</b>
+     <a href="#module_JTAG_UART"><b>JTAG_UART</b>
      </a> altera_avalon_jtag_uart 13.0.1.99.2</span>
    </div>
   </div>
@@ -126,19 +126,19 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </a>
     </td>
     <td class="mastermodule" colspan="1">
-     <a href="#module_Pixel_Buffer_DMA"><b>Pixel_Buffer_DMA</b>
+     <a href="#module_Video_DMA"><b>Video_DMA</b>
      </a>
     </td>
     <td class="mastermodule" colspan="1">
-     <a href="#module_Video_DMA"><b>Video_DMA</b>
+     <a href="#module_Pixel_Buffer_DMA"><b>Pixel_Buffer_DMA</b>
      </a>
     </td>
    </tr>
    <tr>
     <td class="masterl">&#160;data_master</td>
     <td class="masterr">&#160;instruction_master</td>
-    <td class="masterlr">&#160;avalon_pixel_dma_master</td>
     <td class="masterlr">&#160;avalon_dma_master</td>
+    <td class="masterlr">&#160;avalon_pixel_dma_master</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -152,8 +152,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">jtag_debug_module&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04208800</td>
-    <td class="addr"><span style="color:#989898">0x</span>04208800</td>
+    <td class="addr"><span style="color:#989898">0x</span>04008800</td>
+    <td class="addr"><span style="color:#989898">0x</span>04008800</td>
     <td class="empty"></td>
     <td class="empty"></td>
    </tr>
@@ -169,44 +169,10 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">s1&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04204000</td>
-    <td class="addr"><span style="color:#989898">0x</span>04204000</td>
+    <td class="addr"><span style="color:#989898">0x</span>04004000</td>
+    <td class="addr"><span style="color:#989898">0x</span>04004000</td>
     <td class="empty"></td>
     <td class="empty"></td>
-   </tr>
-   <tr>
-    <td class="slavemodule">&#160;
-     <a href="#module_Pixel_Buffer_DMA"><b>Pixel_Buffer_DMA</b>
-     </a>
-    </td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-   </tr>
-   <tr>
-    <td class="slaveb">avalon_control_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04209020</td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-   </tr>
-   <tr>
-    <td class="slavemodule">&#160;
-     <a href="#module_Pixel_Buffer"><b>Pixel_Buffer</b>
-     </a>
-    </td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-    <td class="empty"></td>
-   </tr>
-   <tr>
-    <td class="slaveb">avalon_ssram_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04000000</td>
-    <td class="empty"></td>
-    <td class="addr"><span style="color:#989898">0x</span>04000000</td>
-    <td class="addr"><span style="color:#989898">0x</span>04000000</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -220,7 +186,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_av_config_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04209010</td>
+    <td class="addr"><span style="color:#989898">0x</span>04009020</td>
     <td class="empty"></td>
     <td class="empty"></td>
     <td class="empty"></td>
@@ -237,14 +203,48 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_dma_control_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04209000</td>
+    <td class="addr"><span style="color:#989898">0x</span>04009010</td>
     <td class="empty"></td>
     <td class="empty"></td>
     <td class="empty"></td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
-     <a href="#module_sdram"><b>sdram</b>
+     <a href="#module_Pixel_Buffer"><b>Pixel_Buffer</b>
+     </a>
+    </td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+   </tr>
+   <tr>
+    <td class="slaveb">avalon_ssram_slave&#160;</td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+    <td class="addr"><span style="color:#989898">0x</span>00000000</td>
+    <td class="addr"><span style="color:#989898">0x</span>00000000</td>
+   </tr>
+   <tr>
+    <td class="slavemodule">&#160;
+     <a href="#module_Pixel_Buffer_DMA"><b>Pixel_Buffer_DMA</b>
+     </a>
+    </td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+   </tr>
+   <tr>
+    <td class="slaveb">avalon_control_slave&#160;</td>
+    <td class="addr"><span style="color:#989898">0x</span>04009000</td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+   </tr>
+   <tr>
+    <td class="slavemodule">&#160;
+     <a href="#module_SDRAM"><b>SDRAM</b>
      </a>
     </td>
     <td class="empty"></td>
@@ -261,7 +261,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slavemodule">&#160;
-     <a href="#module_jtag_uart"><b>jtag_uart</b>
+     <a href="#module_JTAG_UART"><b>JTAG_UART</b>
      </a>
     </td>
     <td class="empty"></td>
@@ -271,7 +271,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">avalon_jtag_slave&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>04209030</td>
+    <td class="addr"><span style="color:#989898">0x</span>04009030</td>
     <td class="empty"></td>
     <td class="empty"></td>
     <td class="empty"></td>
@@ -336,7 +336,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_Clock_Signals">Clock_Signals</a>
       </td>
       <td class="from">sys_clk&#160;&#160;</td>
-      <td class="main" rowspan="77">CPU</td>
+      <td class="main" rowspan="75">CPU</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -392,58 +392,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="from">data_master&#160;&#160;</td>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_Pixel_Buffer">Pixel_Buffer</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_ssram_slave</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">data_master&#160;&#160;</td>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_control_slave</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
       <td class="from">jtag_debug_module_reset&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
        <a href="#module_Clock_Signals">Clock_Signals</a>
@@ -453,80 +401,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;clk_in_primary_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_stream_in_reset</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_stream_out_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_VGA_Controller">VGA_Controller</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -667,8 +541,124 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Buffer">Pixel_Buffer</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">data_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;avalon_control_slave</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_stream_in_reset</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_stream_out_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_VGA_Controller">VGA_Controller</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
       <td class="neighbor" rowspan="6">
-       <a href="#module_sdram">sdram</a>
+       <a href="#module_SDRAM">SDRAM</a>
       </td>
      </tr>
      <tr>
@@ -704,7 +694,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td class="from">jtag_debug_module_reset&#160;&#160;</td>
       <td class="neighbor" rowspan="6">
-       <a href="#module_jtag_uart">jtag_uart</a>
+       <a href="#module_JTAG_UART">JTAG_UART</a>
       </td>
      </tr>
      <tr>
@@ -955,7 +945,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">resetSlave</td>
-        <td class="parametervalue">Onchip_Memory.s1</td>
+        <td class="parametervalue">SDRAM.s1</td>
        </tr>
        <tr>
         <td class="parametername">mmu_TLBMissExcSlave</td>
@@ -963,7 +953,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">exceptionSlave</td>
-        <td class="parametervalue">Onchip_Memory.s1</td>
+        <td class="parametervalue">SDRAM.s1</td>
        </tr>
        <tr>
         <td class="parametername">breakSlave</td>
@@ -1103,15 +1093,15 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">resetAbsoluteAddr</td>
-        <td class="parametervalue">69222400</td>
+        <td class="parametervalue">33554432</td>
        </tr>
        <tr>
         <td class="parametername">exceptionAbsoluteAddr</td>
-        <td class="parametervalue">69222432</td>
+        <td class="parametervalue">33554464</td>
        </tr>
        <tr>
         <td class="parametername">breakAbsoluteAddr</td>
-        <td class="parametervalue">69240864</td>
+        <td class="parametervalue">67143712</td>
        </tr>
        <tr>
         <td class="parametername">mmu_TLBMissExcAbsAddr</td>
@@ -1179,11 +1169,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">instSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='sdram.s1' start='0x2000000' end='0x4000000' /&gt;&lt;slave name='Onchip_Memory.s1' start='0x4204000' end='0x4208000' /&gt;&lt;slave name='CPU.jtag_debug_module' start='0x4208800' end='0x4209000' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='SDRAM.s1' start='0x2000000' end='0x4000000' /&gt;&lt;slave name='Onchip_Memory.s1' start='0x4004000' end='0x4008000' /&gt;&lt;slave name='CPU.jtag_debug_module' start='0x4008800' end='0x4009000' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">dataSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='sdram.s1' start='0x2000000' end='0x4000000' /&gt;&lt;slave name='Pixel_Buffer.avalon_ssram_slave' start='0x4000000' end='0x4200000' /&gt;&lt;slave name='Onchip_Memory.s1' start='0x4204000' end='0x4208000' /&gt;&lt;slave name='CPU.jtag_debug_module' start='0x4208800' end='0x4209000' /&gt;&lt;slave name='Video_DMA.avalon_dma_control_slave' start='0x4209000' end='0x4209010' /&gt;&lt;slave name='AV_Config.avalon_av_config_slave' start='0x4209010' end='0x4209020' /&gt;&lt;slave name='Pixel_Buffer_DMA.avalon_control_slave' start='0x4209020' end='0x4209030' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0x4209030' end='0x4209038' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='SDRAM.s1' start='0x2000000' end='0x4000000' /&gt;&lt;slave name='Onchip_Memory.s1' start='0x4004000' end='0x4008000' /&gt;&lt;slave name='CPU.jtag_debug_module' start='0x4008800' end='0x4009000' /&gt;&lt;slave name='Pixel_Buffer_DMA.avalon_control_slave' start='0x4009000' end='0x4009010' /&gt;&lt;slave name='Video_DMA.avalon_dma_control_slave' start='0x4009010' end='0x4009020' /&gt;&lt;slave name='AV_Config.avalon_av_config_slave' start='0x4009020' end='0x4009030' /&gt;&lt;slave name='JTAG_UART.avalon_jtag_slave' start='0x4009030' end='0x4009038' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">clockFrequency</td>
@@ -1260,7 +1250,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">BREAK_ADDR</td>
-        <td class="parametervalue">0x04208820</td>
+        <td class="parametervalue">0x04008820</td>
        </tr>
        <tr>
         <td class="parametername">CPU_FREQ</td>
@@ -1296,7 +1286,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">EXCEPTION_ADDR</td>
-        <td class="parametervalue">0x04204020</td>
+        <td class="parametervalue">0x02000020</td>
        </tr>
        <tr>
         <td class="parametername">FLUSHDA_SUPPORTED</td>
@@ -1344,10 +1334,67 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">RESET_ADDR</td>
-        <td class="parametervalue">0x04204000</td>
+        <td class="parametervalue">0x02000000</td>
        </tr>
       </table>
      </td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_vga_clk"> </a>
+  <div>
+   <hr/>
+   <h2>vga_clk</h2>altera_clock_bridge v13.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">vga_clk&#160;&#160;</td>
+      <td class="main" rowspan="2">vga_clk</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;in_clk</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">DERIVED_CLOCK_RATE</td>
+        <td class="parametervalue">25000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">EXPLICIT_CLOCK_RATE</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">NUM_CLOCK_OUTPUTS</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
     </tr>
    </table>
   </div>
@@ -1359,11 +1406,23 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <div class="greydiv">
     <table class="connectionboxes">
      <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="main" rowspan="12">Onchip_Memory</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clk1</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
       <td class="neighbor" rowspan="6">
        <a href="#module_CPU">CPU</a>
       </td>
       <td class="from">data_master&#160;&#160;</td>
-      <td class="main" rowspan="12">Onchip_Memory</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
@@ -1379,18 +1438,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="to">&#160;&#160;reset1</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">sys_clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clk1</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -1641,6 +1688,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
+      <td class="from">vga_clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_vga_clk">vga_clk</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;in_clk</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
       <td class="from">sys_clk&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
        <a href="#module_Onchip_Memory">Onchip_Memory</a>
@@ -1650,128 +1713,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;clk1</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">sys_clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Buffer">Pixel_Buffer</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">sys_clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">sys_clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">sys_clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">sys_clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_stream_in</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">vga_clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_stream_out</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">vga_clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_VGA_Controller">VGA_Controller</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">vga_clk&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_VGA_Clk">VGA_Clk</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;in_clk</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -1893,7 +1834,113 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td class="from">sys_clk&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
-       <a href="#module_sdram">sdram</a>
+       <a href="#module_Pixel_Buffer">Pixel_Buffer</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">vga_clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_VGA_Controller">VGA_Controller</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">vga_clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_stream_out</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">sys_clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;clock_stream_in</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_SDRAM">SDRAM</a>
       </td>
      </tr>
      <tr>
@@ -1909,7 +1956,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td class="from">sys_clk&#160;&#160;</td>
       <td class="neighbor" rowspan="2">
-       <a href="#module_jtag_uart">jtag_uart</a>
+       <a href="#module_JTAG_UART">JTAG_UART</a>
       </td>
      </tr>
      <tr>
@@ -1961,811 +2008,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <tr>
         <td class="parametername">deviceFamily</td>
         <td class="parametervalue">Cyclone II</td>
-       </tr>
-       <tr>
-        <td class="parametername">generateLegacySim</td>
-        <td class="parametervalue">false</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>&#160;&#160;
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Software Assignments</h2>(none)</td>
-    </tr>
-   </table>
-  </div>
-  <a name="module_Pixel_Buffer_DMA"> </a>
-  <div>
-   <hr/>
-   <h2>Pixel_Buffer_DMA</h2>altera_up_avalon_video_pixel_buffer_dma v13.0
-   <br/>
-   <div class="greydiv">
-    <table class="connectionboxes">
-     <tr>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_CPU">CPU</a>
-      </td>
-      <td class="from">data_master&#160;&#160;</td>
-      <td class="main" rowspan="15">Pixel_Buffer_DMA</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_control_slave</td>
-     </tr>
-     <tr>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">sys_clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">avalon_pixel_dma_master&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Buffer">Pixel_Buffer</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_ssram_slave</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">avalon_pixel_source&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_rgb_sink</td>
-     </tr>
-    </table>
-   </div>
-   <br/>
-   <br/>
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Parameters</h2>
-      <table>
-       <tr>
-        <td class="parametername">addr_mode</td>
-        <td class="parametervalue">X-Y</td>
-       </tr>
-       <tr>
-        <td class="parametername">start_address</td>
-        <td class="parametervalue">67108864</td>
-       </tr>
-       <tr>
-        <td class="parametername">back_start_address</td>
-        <td class="parametervalue">67108864</td>
-       </tr>
-       <tr>
-        <td class="parametername">image_width</td>
-        <td class="parametervalue">320</td>
-       </tr>
-       <tr>
-        <td class="parametername">image_height</td>
-        <td class="parametervalue">240</td>
-       </tr>
-       <tr>
-        <td class="parametername">color_space</td>
-        <td class="parametervalue">16-bit RGB</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
-        <td class="parametervalue">50000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_DEVICE_FAMILY</td>
-        <td class="parametervalue">CYCLONEII</td>
-       </tr>
-       <tr>
-        <td class="parametername">deviceFamily</td>
-        <td class="parametervalue">Cyclone II</td>
-       </tr>
-       <tr>
-        <td class="parametername">generateLegacySim</td>
-        <td class="parametervalue">false</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>&#160;&#160;
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Software Assignments</h2>(none)</td>
-    </tr>
-   </table>
-  </div>
-  <a name="module_Pixel_RGB_Resampler"> </a>
-  <div>
-   <hr/>
-   <h2>Pixel_RGB_Resampler</h2>altera_up_avalon_video_rgb_resampler v13.0
-   <br/>
-   <div class="greydiv">
-    <table class="connectionboxes">
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">sys_clk&#160;&#160;</td>
-      <td class="main" rowspan="13">Pixel_RGB_Resampler</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_CPU">CPU</a>
-      </td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
-      </td>
-      <td class="from">avalon_pixel_source&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_rgb_sink</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">avalon_rgb_source&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_scaler_sink</td>
-     </tr>
-    </table>
-   </div>
-   <br/>
-   <br/>
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Parameters</h2>
-      <table>
-       <tr>
-        <td class="parametername">input_type</td>
-        <td class="parametervalue">16-bit RGB</td>
-       </tr>
-       <tr>
-        <td class="parametername">output_type</td>
-        <td class="parametervalue">30-bit RGB</td>
-       </tr>
-       <tr>
-        <td class="parametername">alpha</td>
-        <td class="parametervalue">1023</td>
-       </tr>
-       <tr>
-        <td class="parametername">input_bits</td>
-        <td class="parametervalue">16</td>
-       </tr>
-       <tr>
-        <td class="parametername">input_planes</td>
-        <td class="parametervalue">1</td>
-       </tr>
-       <tr>
-        <td class="parametername">output_bits</td>
-        <td class="parametervalue">10</td>
-       </tr>
-       <tr>
-        <td class="parametername">output_planes</td>
-        <td class="parametervalue">3</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
-        <td class="parametervalue">50000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_DEVICE_FAMILY</td>
-        <td class="parametervalue">CYCLONEII</td>
-       </tr>
-       <tr>
-        <td class="parametername">deviceFamily</td>
-        <td class="parametervalue">Cyclone II</td>
-       </tr>
-       <tr>
-        <td class="parametername">generateLegacySim</td>
-        <td class="parametervalue">false</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>&#160;&#160;
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Software Assignments</h2>(none)</td>
-    </tr>
-   </table>
-  </div>
-  <a name="module_Pixel_Scaler"> </a>
-  <div>
-   <hr/>
-   <h2>Pixel_Scaler</h2>altera_up_avalon_video_scaler v13.0
-   <br/>
-   <div class="greydiv">
-    <table class="connectionboxes">
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
-      </td>
-      <td class="from">avalon_rgb_source&#160;&#160;</td>
-      <td class="main" rowspan="13">Pixel_Scaler</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_scaler_sink</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">sys_clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_CPU">CPU</a>
-      </td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">avalon_scaler_source&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_dc_buffer_sink</td>
-     </tr>
-    </table>
-   </div>
-   <br/>
-   <br/>
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Parameters</h2>
-      <table>
-       <tr>
-        <td class="parametername">width_scaling</td>
-        <td class="parametervalue">2</td>
-       </tr>
-       <tr>
-        <td class="parametername">height_scaling</td>
-        <td class="parametervalue">2</td>
-       </tr>
-       <tr>
-        <td class="parametername">width_in</td>
-        <td class="parametervalue">320</td>
-       </tr>
-       <tr>
-        <td class="parametername">height_in</td>
-        <td class="parametervalue">240</td>
-       </tr>
-       <tr>
-        <td class="parametername">width_out</td>
-        <td class="parametervalue">640</td>
-       </tr>
-       <tr>
-        <td class="parametername">height_out</td>
-        <td class="parametervalue">480</td>
-       </tr>
-       <tr>
-        <td class="parametername">color_bits</td>
-        <td class="parametervalue">10</td>
-       </tr>
-       <tr>
-        <td class="parametername">color_planes</td>
-        <td class="parametervalue">3</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
-        <td class="parametervalue">50000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_DEVICE_FAMILY</td>
-        <td class="parametervalue">CYCLONEII</td>
-       </tr>
-       <tr>
-        <td class="parametername">deviceFamily</td>
-        <td class="parametervalue">Cyclone II</td>
-       </tr>
-       <tr>
-        <td class="parametername">generateLegacySim</td>
-        <td class="parametervalue">false</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>&#160;&#160;
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Software Assignments</h2>(none)</td>
-    </tr>
-   </table>
-  </div>
-  <a name="module_Dual_Clock_FIFO"> </a>
-  <div>
-   <hr/>
-   <h2>Dual_Clock_FIFO</h2>altera_up_avalon_video_dual_clock_buffer v13.0
-   <br/>
-   <div class="greydiv">
-    <table class="connectionboxes">
-     <tr>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">sys_clk&#160;&#160;</td>
-      <td class="main" rowspan="19">Dual_Clock_FIFO</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_stream_in</td>
-     </tr>
-     <tr>
-      <td class="from">vga_clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_stream_out</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_CPU">CPU</a>
-      </td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_stream_in_reset</td>
-     </tr>
-     <tr>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_stream_out_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_stream_in_reset</td>
-     </tr>
-     <tr>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_stream_out_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
-      </td>
-      <td class="from">avalon_scaler_source&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_dc_buffer_sink</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">avalon_dc_buffer_source&#160;&#160;</td>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_VGA_Controller">VGA_Controller</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;avalon_vga_sink</td>
-     </tr>
-    </table>
-   </div>
-   <br/>
-   <br/>
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Parameters</h2>
-      <table>
-       <tr>
-        <td class="parametername">color_bits</td>
-        <td class="parametervalue">10</td>
-       </tr>
-       <tr>
-        <td class="parametername">color_planes</td>
-        <td class="parametervalue">3</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_CLOCK_STREAM_IN_CLOCK_RATE</td>
-        <td class="parametervalue">50000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_CLOCK_STREAM_OUT_CLOCK_RATE</td>
-        <td class="parametervalue">25000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_DEVICE_FAMILY</td>
-        <td class="parametervalue">CYCLONEII</td>
-       </tr>
-       <tr>
-        <td class="parametername">deviceFamily</td>
-        <td class="parametervalue">Cyclone II</td>
-       </tr>
-       <tr>
-        <td class="parametername">generateLegacySim</td>
-        <td class="parametervalue">false</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>&#160;&#160;
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Software Assignments</h2>(none)</td>
-    </tr>
-   </table>
-  </div>
-  <a name="module_VGA_Controller"> </a>
-  <div>
-   <hr/>
-   <h2>VGA_Controller</h2>altera_up_avalon_video_vga_controller v13.0
-   <br/>
-   <div class="greydiv">
-    <table class="connectionboxes">
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">vga_clk&#160;&#160;</td>
-      <td class="main" rowspan="11">VGA_Controller</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_CPU">CPU</a>
-      </td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
-      </td>
-      <td class="from">avalon_dc_buffer_source&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_vga_sink</td>
-     </tr>
-    </table>
-   </div>
-   <br/>
-   <br/>
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Parameters</h2>
-      <table>
-       <tr>
-        <td class="parametername">board</td>
-        <td class="parametervalue">DE2-70</td>
-       </tr>
-       <tr>
-        <td class="parametername">device</td>
-        <td class="parametervalue">VGA Connector</td>
-       </tr>
-       <tr>
-        <td class="parametername">underflow_flag</td>
-        <td class="parametervalue">false</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
-        <td class="parametervalue">25000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_DEVICE_FAMILY</td>
-        <td class="parametervalue">CYCLONEII</td>
-       </tr>
-       <tr>
-        <td class="parametername">deviceFamily</td>
-        <td class="parametervalue">Cyclone II</td>
-       </tr>
-       <tr>
-        <td class="parametername">generateLegacySim</td>
-        <td class="parametervalue">false</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>&#160;&#160;
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Software Assignments</h2>(none)</td>
-    </tr>
-   </table>
-  </div>
-  <a name="module_Pixel_Buffer"> </a>
-  <div>
-   <hr/>
-   <h2>Pixel_Buffer</h2>altera_up_avalon_sram v13.0
-   <br/>
-   <div class="greydiv">
-    <table class="connectionboxes">
-     <tr>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_CPU">CPU</a>
-      </td>
-      <td class="from">data_master&#160;&#160;</td>
-      <td class="main" rowspan="16">Pixel_Buffer</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_ssram_slave</td>
-     </tr>
-     <tr>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">sys_clk&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Video_DMA">Video_DMA</a>
-      </td>
-      <td class="from">avalon_dma_master&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_ssram_slave</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
-      </td>
-      <td class="from">avalon_pixel_dma_master&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_ssram_slave</td>
-     </tr>
-    </table>
-   </div>
-   <br/>
-   <br/>
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Parameters</h2>
-      <table>
-       <tr>
-        <td class="parametername">board</td>
-        <td class="parametervalue">DE2-70</td>
-       </tr>
-       <tr>
-        <td class="parametername">pixel_buffer</td>
-        <td class="parametervalue">true</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
-        <td class="parametervalue">50000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">AUTO_DEVICE_FAMILY</td>
-        <td class="parametervalue">CYCLONEII</td>
-       </tr>
-       <tr>
-        <td class="parametername">deviceFamily</td>
-        <td class="parametervalue">Cyclone II</td>
-       </tr>
-       <tr>
-        <td class="parametername">generateLegacySim</td>
-        <td class="parametervalue">false</td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>&#160;&#160;
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Software Assignments</h2>(none)</td>
-    </tr>
-   </table>
-  </div>
-  <a name="module_VGA_Clk"> </a>
-  <div>
-   <hr/>
-   <h2>VGA_Clk</h2>altera_clock_bridge v13.0
-   <br/>
-   <div class="greydiv">
-    <table class="connectionboxes">
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
-      </td>
-      <td class="from">vga_clk&#160;&#160;</td>
-      <td class="main" rowspan="2">VGA_Clk</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;in_clk</td>
-     </tr>
-    </table>
-   </div>
-   <br/>
-   <br/>
-   <table class="flowbox">
-    <tr>
-     <td class="parametersbox">
-      <h2>Parameters</h2>
-      <table>
-       <tr>
-        <td class="parametername">DERIVED_CLOCK_RATE</td>
-        <td class="parametervalue">25000000</td>
-       </tr>
-       <tr>
-        <td class="parametername">EXPLICIT_CLOCK_RATE</td>
-        <td class="parametervalue">0</td>
-       </tr>
-       <tr>
-        <td class="parametername">NUM_CLOCK_OUTPUTS</td>
-        <td class="parametervalue">1</td>
-       </tr>
-       <tr>
-        <td class="parametername">deviceFamily</td>
-        <td class="parametervalue">UNKNOWN</td>
        </tr>
        <tr>
         <td class="parametername">generateLegacySim</td>
@@ -2951,9 +2193,9 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
+       <a href="#module_CPU">CPU</a>
       </td>
-      <td class="from">clk_reset&#160;&#160;</td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clock_reset_reset</td>
@@ -2963,9 +2205,9 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_CPU">CPU</a>
+       <a href="#module_clk_0">clk_0</a>
       </td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="from">clk_reset&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clock_reset_reset</td>
@@ -3045,12 +2287,12 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
+       <a href="#module_Video_In_Decoder">Video_In_Decoder</a>
       </td>
-      <td class="from">clk_reset&#160;&#160;</td>
+      <td class="from">avalon_decoder_source&#160;&#160;</td>
      </tr>
      <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
+      <td class="to">&#160;&#160;avalon_bayer_sink</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3069,12 +2311,12 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_Video_In_Decoder">Video_In_Decoder</a>
+       <a href="#module_clk_0">clk_0</a>
       </td>
-      <td class="from">avalon_decoder_source&#160;&#160;</td>
+      <td class="from">clk_reset&#160;&#160;</td>
      </tr>
      <tr>
-      <td class="to">&#160;&#160;avalon_bayer_sink</td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
      </tr>
      <tr>
       <td></td>
@@ -3171,6 +2413,18 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
+       <a href="#module_Bayer_Pattern_Resampler">Bayer_Pattern_Resampler</a>
+      </td>
+      <td class="from">avalon_bayer_source&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_clipper_sink</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
        <a href="#module_CPU">CPU</a>
       </td>
       <td class="from">jtag_debug_module_reset&#160;&#160;</td>
@@ -3189,18 +2443,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Bayer_Pattern_Resampler">Bayer_Pattern_Resampler</a>
-      </td>
-      <td class="from">avalon_bayer_source&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_clipper_sink</td>
      </tr>
      <tr>
       <td></td>
@@ -3337,6 +2579,18 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
+       <a href="#module_Video_Clipper">Video_Clipper</a>
+      </td>
+      <td class="from">avalon_clipper_source&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_scaler_sink</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
        <a href="#module_CPU">CPU</a>
       </td>
       <td class="from">jtag_debug_module_reset&#160;&#160;</td>
@@ -3355,18 +2609,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="to">&#160;&#160;clock_reset_reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_Video_Clipper">Video_Clipper</a>
-      </td>
-      <td class="from">avalon_clipper_source&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;avalon_scaler_sink</td>
      </tr>
      <tr>
       <td></td>
@@ -3471,12 +2713,12 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_CPU">CPU</a>
+       <a href="#module_Video_Scaler">Video_Scaler</a>
       </td>
-      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+      <td class="from">avalon_scaler_source&#160;&#160;</td>
      </tr>
      <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
+      <td class="to">&#160;&#160;avalon_rgb_sink</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3495,12 +2737,12 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_Video_Scaler">Video_Scaler</a>
+       <a href="#module_CPU">CPU</a>
       </td>
-      <td class="from">avalon_scaler_source&#160;&#160;</td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
      </tr>
      <tr>
-      <td class="to">&#160;&#160;avalon_rgb_sink</td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
      </tr>
      <tr>
       <td></td>
@@ -3588,10 +2830,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     <table class="connectionboxes">
      <tr>
       <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="main" rowspan="15">Video_DMA</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
        <a href="#module_Video_RGB_Resampler">Video_RGB_Resampler</a>
       </td>
       <td class="from">avalon_rgb_source&#160;&#160;</td>
-      <td class="main" rowspan="15">Video_DMA</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;avalon_dma_sink</td>
@@ -3601,12 +2855,12 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="neighbor" rowspan="2">
-       <a href="#module_Clock_Signals">Clock_Signals</a>
+       <a href="#module_clk_0">clk_0</a>
       </td>
-      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="from">clk_reset&#160;&#160;</td>
      </tr>
      <tr>
-      <td class="to">&#160;&#160;clock_reset</td>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -3625,18 +2879,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="to">&#160;&#160;avalon_dma_control_slave</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock_reset_reset</td>
      </tr>
      <tr>
       <td></td>
@@ -3670,11 +2912,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">start_address</td>
-        <td class="parametervalue">67108864</td>
+        <td class="parametervalue">0</td>
        </tr>
        <tr>
         <td class="parametername">back_start_address</td>
-        <td class="parametervalue">67108864</td>
+        <td class="parametervalue">0</td>
        </tr>
        <tr>
         <td class="parametername">width</td>
@@ -3723,10 +2965,10 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     </tr>
    </table>
   </div>
-  <a name="module_sdram"> </a>
+  <a name="module_Pixel_Buffer"> </a>
   <div>
    <hr/>
-   <h2>sdram</h2>altera_avalon_new_sdram_controller v13.0.1.99.2
+   <h2>Pixel_Buffer</h2>altera_up_avalon_sram v13.0
    <br/>
    <div class="greydiv">
     <table class="connectionboxes">
@@ -3735,7 +2977,749 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_Clock_Signals">Clock_Signals</a>
       </td>
       <td class="from">sys_clk&#160;&#160;</td>
-      <td class="main" rowspan="12">sdram</td>
+      <td class="main" rowspan="14">Pixel_Buffer</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Video_DMA">Video_DMA</a>
+      </td>
+      <td class="from">avalon_dma_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_ssram_slave</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_CPU">CPU</a>
+      </td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
+      </td>
+      <td class="from">avalon_pixel_dma_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_ssram_slave</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">board</td>
+        <td class="parametervalue">DE2-70</td>
+       </tr>
+       <tr>
+        <td class="parametername">pixel_buffer</td>
+        <td class="parametervalue">true</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_DEVICE_FAMILY</td>
+        <td class="parametervalue">CYCLONEII</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">Cyclone II</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_Pixel_Buffer_DMA"> </a>
+  <div>
+   <hr/>
+   <h2>Pixel_Buffer_DMA</h2>altera_up_avalon_video_pixel_buffer_dma v13.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="main" rowspan="15">Pixel_Buffer_DMA</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_CPU">CPU</a>
+      </td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr>
+      <td class="from">data_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_control_slave</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">avalon_pixel_dma_master&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Buffer">Pixel_Buffer</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;avalon_ssram_slave</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">avalon_pixel_source&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;avalon_rgb_sink</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">addr_mode</td>
+        <td class="parametervalue">X-Y</td>
+       </tr>
+       <tr>
+        <td class="parametername">start_address</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">back_start_address</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">image_width</td>
+        <td class="parametervalue">640</td>
+       </tr>
+       <tr>
+        <td class="parametername">image_height</td>
+        <td class="parametervalue">240</td>
+       </tr>
+       <tr>
+        <td class="parametername">color_space</td>
+        <td class="parametervalue">16-bit RGB</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_DEVICE_FAMILY</td>
+        <td class="parametervalue">CYCLONEII</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">Cyclone II</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_Pixel_RGB_Resampler"> </a>
+  <div>
+   <hr/>
+   <h2>Pixel_RGB_Resampler</h2>altera_up_avalon_video_rgb_resampler v13.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="main" rowspan="13">Pixel_RGB_Resampler</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Buffer_DMA">Pixel_Buffer_DMA</a>
+      </td>
+      <td class="from">avalon_pixel_source&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_rgb_sink</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_CPU">CPU</a>
+      </td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">avalon_rgb_source&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;avalon_scaler_sink</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">input_type</td>
+        <td class="parametervalue">16-bit RGB</td>
+       </tr>
+       <tr>
+        <td class="parametername">output_type</td>
+        <td class="parametervalue">30-bit RGB</td>
+       </tr>
+       <tr>
+        <td class="parametername">alpha</td>
+        <td class="parametervalue">1023</td>
+       </tr>
+       <tr>
+        <td class="parametername">input_bits</td>
+        <td class="parametervalue">16</td>
+       </tr>
+       <tr>
+        <td class="parametername">input_planes</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">output_bits</td>
+        <td class="parametervalue">10</td>
+       </tr>
+       <tr>
+        <td class="parametername">output_planes</td>
+        <td class="parametervalue">3</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_DEVICE_FAMILY</td>
+        <td class="parametervalue">CYCLONEII</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">Cyclone II</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_Pixel_Scaler"> </a>
+  <div>
+   <hr/>
+   <h2>Pixel_Scaler</h2>altera_up_avalon_video_scaler v13.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="main" rowspan="13">Pixel_Scaler</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_RGB_Resampler">Pixel_RGB_Resampler</a>
+      </td>
+      <td class="from">avalon_rgb_source&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_scaler_sink</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_CPU">CPU</a>
+      </td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">avalon_scaler_source&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;avalon_dc_buffer_sink</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">width_scaling</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">height_scaling</td>
+        <td class="parametervalue">2</td>
+       </tr>
+       <tr>
+        <td class="parametername">width_in</td>
+        <td class="parametervalue">640</td>
+       </tr>
+       <tr>
+        <td class="parametername">height_in</td>
+        <td class="parametervalue">240</td>
+       </tr>
+       <tr>
+        <td class="parametername">width_out</td>
+        <td class="parametervalue">640</td>
+       </tr>
+       <tr>
+        <td class="parametername">height_out</td>
+        <td class="parametervalue">480</td>
+       </tr>
+       <tr>
+        <td class="parametername">color_bits</td>
+        <td class="parametervalue">10</td>
+       </tr>
+       <tr>
+        <td class="parametername">color_planes</td>
+        <td class="parametervalue">3</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_DEVICE_FAMILY</td>
+        <td class="parametervalue">CYCLONEII</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">Cyclone II</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_Dual_Clock_FIFO"> </a>
+  <div>
+   <hr/>
+   <h2>Dual_Clock_FIFO</h2>altera_up_avalon_video_dual_clock_buffer v13.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">vga_clk&#160;&#160;</td>
+      <td class="main" rowspan="19">Dual_Clock_FIFO</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_stream_out</td>
+     </tr>
+     <tr>
+      <td class="from">sys_clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_stream_in</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Pixel_Scaler">Pixel_Scaler</a>
+      </td>
+      <td class="from">avalon_scaler_source&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_dc_buffer_sink</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_stream_in_reset</td>
+     </tr>
+     <tr>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_stream_out_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_CPU">CPU</a>
+      </td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_stream_in_reset</td>
+     </tr>
+     <tr>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_stream_out_reset</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">avalon_dc_buffer_source&#160;&#160;</td>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_VGA_Controller">VGA_Controller</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;avalon_vga_sink</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">color_bits</td>
+        <td class="parametervalue">10</td>
+       </tr>
+       <tr>
+        <td class="parametername">color_planes</td>
+        <td class="parametervalue">3</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_STREAM_IN_CLOCK_RATE</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_STREAM_OUT_CLOCK_RATE</td>
+        <td class="parametervalue">25000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_DEVICE_FAMILY</td>
+        <td class="parametervalue">CYCLONEII</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">Cyclone II</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_VGA_Controller"> </a>
+  <div>
+   <hr/>
+   <h2>VGA_Controller</h2>altera_up_avalon_video_vga_controller v13.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">vga_clk&#160;&#160;</td>
+      <td class="main" rowspan="11">VGA_Controller</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Dual_Clock_FIFO">Dual_Clock_FIFO</a>
+      </td>
+      <td class="from">avalon_dc_buffer_source&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;avalon_vga_sink</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_CPU">CPU</a>
+      </td>
+      <td class="from">jtag_debug_module_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock_reset_reset</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">board</td>
+        <td class="parametervalue">DE2-70</td>
+       </tr>
+       <tr>
+        <td class="parametername">device</td>
+        <td class="parametervalue">VGA Connector</td>
+       </tr>
+       <tr>
+        <td class="parametername">underflow_flag</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_CLOCK_RESET_CLOCK_RATE</td>
+        <td class="parametervalue">25000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">AUTO_DEVICE_FAMILY</td>
+        <td class="parametervalue">CYCLONEII</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">Cyclone II</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_SDRAM"> </a>
+  <div>
+   <hr/>
+   <h2>SDRAM</h2>altera_avalon_new_sdram_controller v13.0.1.99.2
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_Clock_Signals">Clock_Signals</a>
+      </td>
+      <td class="from">sys_clk&#160;&#160;</td>
+      <td class="main" rowspan="12">SDRAM</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -3875,7 +3859,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">componentName</td>
-        <td class="parametervalue">de2_70_sdram</td>
+        <td class="parametervalue">de2_70_SDRAM</td>
        </tr>
        <tr>
         <td class="parametername">size</td>
@@ -4011,10 +3995,10 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     </tr>
    </table>
   </div>
-  <a name="module_jtag_uart"> </a>
+  <a name="module_JTAG_UART"> </a>
   <div>
    <hr/>
-   <h2>jtag_uart</h2>altera_avalon_jtag_uart v13.0.1.99.2
+   <h2>JTAG_UART</h2>altera_avalon_jtag_uart v13.0.1.99.2
    <br/>
    <div class="greydiv">
     <table class="connectionboxes">
@@ -4023,10 +4007,22 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_Clock_Signals">Clock_Signals</a>
       </td>
       <td class="from">sys_clk&#160;&#160;</td>
-      <td class="main" rowspan="12">jtag_uart</td>
+      <td class="main" rowspan="12">JTAG_UART</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;reset</td>
      </tr>
      <tr style="height:6px">
       <td></td>
@@ -4051,18 +4047,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="to">&#160;&#160;irq</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="2">
-       <a href="#module_clk_0">clk_0</a>
-      </td>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;reset</td>
      </tr>
     </table>
    </div>
@@ -4174,7 +4158,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   <table class="blueBar">
    <tr>
     <td class="l">generation took 0,00 seconds</td>
-    <td class="r">rendering took 0,12 seconds</td>
+    <td class="r">rendering took 0,13 seconds</td>
    </tr>
   </table>
  </body>

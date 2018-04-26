@@ -29,19 +29,19 @@ FUNCTION altsyncram_7ku (address_a[6..0], address_b[6..0], addressstall_b, clock
 RETURNS ( q_b[31..0]);
 FUNCTION dffpipe_c2e (clock, d[0..0])
 RETURNS ( q[0..0]);
-FUNCTION alt_synch_pipe_7u7 (clock, d[7..0])
+FUNCTION alt_synch_pipe_9u7 (clock, d[7..0])
 RETURNS ( q[7..0]);
 FUNCTION dffpipe_0v8 (clock, d[7..0])
 RETURNS ( q[7..0]);
-FUNCTION alt_synch_pipe_8u7 (clock, d[7..0])
+FUNCTION alt_synch_pipe_au7 (clock, d[7..0])
 RETURNS ( q[7..0]);
 FUNCTION cmpr_o16 (dataa[3..0], datab[3..0])
 RETURNS ( aeb);
 FUNCTION mux_1u7 (data[1..0], sel[0..0])
 RETURNS ( result[0..0]);
 
---synthesis_resources = lut 13 M4K 1 reg 119 
-OPTIONS ALTERA_INTERNAL_OPTION = "AUTO_SHIFT_REGISTER_RECOGNITION=OFF;REMOVE_DUPLICATE_REGISTERS=OFF;suppress_da_rule_internal=d101;suppress_da_rule_internal=d102;suppress_da_rule_internal=s102;{-to p0addr} POWER_UP_LEVEL=LOW;{-to rdemp_eq_comp_lsb_aeb} POWER_UP_LEVEL=HIGH;{-to rdemp_eq_comp_msb_aeb} POWER_UP_LEVEL=HIGH;-name CUT ON -from rdptr_g -to ws_dgrp|dffpipe_2v8:dffpipe20|dffe21a;-name SDC_STATEMENT ""set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_2v8:dffpipe20|dffe21a* "";-name CUT ON -from delayed_wrptr_g -to rs_dgwp|dffpipe_1v8:dffpipe16|dffe17a;-name SDC_STATEMENT ""set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_1v8:dffpipe16|dffe17a* """;
+--synthesis_resources = lut 13 M4K 1 reg 69 
+OPTIONS ALTERA_INTERNAL_OPTION = "AUTO_SHIFT_REGISTER_RECOGNITION=OFF;REMOVE_DUPLICATE_REGISTERS=OFF;suppress_da_rule_internal=d101;suppress_da_rule_internal=d102;suppress_da_rule_internal=s102;{-to p0addr} POWER_UP_LEVEL=LOW;{-to rdemp_eq_comp_lsb_aeb} POWER_UP_LEVEL=HIGH;{-to rdemp_eq_comp_msb_aeb} POWER_UP_LEVEL=HIGH;-name CUT ON -from rdptr_g -to ws_dgrp|dffpipe_4v8:dffpipe9|dffe10a;-name SDC_STATEMENT ""set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_4v8:dffpipe9|dffe10a* "";-name CUT ON -from delayed_wrptr_g -to rs_dgwp|dffpipe_3v8:dffpipe6|dffe7a;-name SDC_STATEMENT ""set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_3v8:dffpipe6|dffe7a* """;
 
 SUBDESIGN dcfifo_5oj1
 ( 
@@ -80,10 +80,10 @@ VARIABLE
 	wrfull_eq_comp_msb_mux_reg : dffe;
 	ws_dgrp_reg[7..0] : dffe;
 	rdaclr : dffpipe_c2e;
-	rs_dgwp : alt_synch_pipe_7u7;
+	rs_dgwp : alt_synch_pipe_9u7;
 	ws_brp : dffpipe_0v8;
 	ws_bwp : dffpipe_0v8;
-	ws_dgrp : alt_synch_pipe_8u7;
+	ws_dgrp : alt_synch_pipe_au7;
 	wrusedw_sub_dataa[7..0]	:	WIRE;
 	wrusedw_sub_datab[7..0]	:	WIRE;
 	wrusedw_sub_result[7..0]	:	WIRE;

@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project T ****
+
+make all 
+Info: Building C:/Users/Francisco/Desktop/DE2_70_D5M/Eclipse/Software/T_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_D5M/Eclipse/Software/T_bsp/
+[BSP build complete]
+[T build complete]
+
+**** Build Finished ****

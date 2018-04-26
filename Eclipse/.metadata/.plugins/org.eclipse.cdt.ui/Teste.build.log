@@ -5,6 +5,26 @@ make all
 Info: Building C:/Users/Francisco/Desktop/DE2_70_D5M/Eclipse/Software/Teste_bsp/
 make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_D5M/Eclipse/Software/Teste_bsp/
 [BSP build complete]
-[Teste build complete]
+Info: Linking Teste.elf
+nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_D5M/Eclipse/Software/Teste_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_D5M/Eclipse/Software/Teste_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_D5M/Eclipse/Software/Teste_bsp/   -Wl,-Map=Teste.map   -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Teste.elf obj/default/JtagUart.o obj/default/debug.o obj/default/main.o -lm 
+obj/default/debug.o: In function `debug_output':
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/debug.c:10: undefined reference to `UART_IsOpened'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/debug.c:11: undefined reference to `UART_Open'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/debug.c:12: undefined reference to `UART_WriteString'
+obj/default/main.o: In function `init':
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:45: undefined reference to `UART_Open'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:57: undefined reference to `LCD_Open'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:58: undefined reference to `LCD_TextOut'
+obj/default/main.o: In function `main':
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:85: undefined reference to `read_packet'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:91: undefined reference to `dump_op_name'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:94: undefined reference to `op_polling'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:97: undefined reference to `op_camera_config'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:100: undefined reference to `op_camera_capture'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:103: undefined reference to `op_camera_port_read'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:106: undefined reference to `op_memory_read'
+C:\Users\Francisco\Desktop\DE2_70_D5M\Eclipse\Software\Teste/main.c:109: undefined reference to `op_memory_write'
+collect2: ld returned 1 exit status
+make: *** [Teste.elf] Error 1
 
 **** Build Finished ****

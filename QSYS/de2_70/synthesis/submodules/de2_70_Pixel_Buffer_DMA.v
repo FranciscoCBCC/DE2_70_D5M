@@ -84,17 +84,17 @@ module de2_70_Pixel_Buffer_DMA (
  *****************************************************************************/
 
 // Parameters
-parameter DEFAULT_BUFFER_ADDRESS		= 32'd67108864;
-parameter DEFAULT_BACK_BUF_ADDRESS	= 32'd67108864;
+parameter DEFAULT_BUFFER_ADDRESS		= 32'd0;
+parameter DEFAULT_BACK_BUF_ADDRESS	= 32'd0;
 
-parameter WW						= 8;  // Image width's address width
+parameter WW						= 9;  // Image width's address width
 parameter HW						= 7;  // Image height's address width
 
 parameter MW						= 15; // Avalon master's data width
 parameter DW						= 15; // Image pixel width
 parameter EW						= 0;  // Streaming empty signel width
 
-parameter PIXELS					= 320; // Image width - number of pixels
+parameter PIXELS					= 640; // Image width - number of pixels
 parameter LINES 					= 240; // Image height - number of lines
 
 /*****************************************************************************

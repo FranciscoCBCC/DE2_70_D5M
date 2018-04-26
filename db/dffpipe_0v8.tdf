@@ -28,22 +28,22 @@ SUBDESIGN dffpipe_0v8
 	q[7..0]	:	output;
 ) 
 VARIABLE 
-	dffe19a[7..0] : dffe;
+	dffe16a[7..0] : dffe;
 	clrn	: NODE;
 	ena	: NODE;
 	prn	: NODE;
 	sclr	: NODE;
 
 BEGIN 
-	dffe19a[].clk = clock;
-	dffe19a[].clrn = clrn;
-	dffe19a[].d = (d[] & (! sclr));
-	dffe19a[].ena = ena;
-	dffe19a[].prn = prn;
+	dffe16a[].clk = clock;
+	dffe16a[].clrn = clrn;
+	dffe16a[].d = (d[] & (! sclr));
+	dffe16a[].ena = ena;
+	dffe16a[].prn = prn;
 	clrn = VCC;
 	ena = VCC;
 	prn = VCC;
-	q[] = dffe19a[].q;
+	q[] = dffe16a[].q;
 	sclr = GND;
 END;
 --VALID FILE

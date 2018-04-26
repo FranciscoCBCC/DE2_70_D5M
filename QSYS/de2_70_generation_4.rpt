@@ -6,24 +6,12 @@ Progress: Adding clk_0 [clock_source 13.0]
 Progress: Parameterizing module clk_0
 Progress: Adding CPU [altera_nios2_qsys 13.0]
 Progress: Parameterizing module CPU
+Progress: Adding vga_clk [altera_clock_bridge 13.0]
+Progress: Parameterizing module vga_clk
 Progress: Adding Onchip_Memory [altera_avalon_onchip_memory2 13.0.1.99.2]
 Progress: Parameterizing module Onchip_Memory
 Progress: Adding Clock_Signals [altera_up_clocks 13.0]
 Progress: Parameterizing module Clock_Signals
-Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
-Progress: Parameterizing module Pixel_Buffer_DMA
-Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
-Progress: Parameterizing module Pixel_RGB_Resampler
-Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
-Progress: Parameterizing module Pixel_Scaler
-Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
-Progress: Parameterizing module Dual_Clock_FIFO
-Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
-Progress: Parameterizing module VGA_Controller
-Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
-Progress: Parameterizing module Pixel_Buffer
-Progress: Adding VGA_Clk [altera_clock_bridge 13.0]
-Progress: Parameterizing module VGA_Clk
 Progress: Adding AV_Config [altera_up_avalon_audio_and_video_config 13.0]
 Progress: Parameterizing module AV_Config
 Progress: Adding Video_In_Decoder [altera_up_avalon_video_decoder 13.0]
@@ -38,20 +26,34 @@ Progress: Adding Video_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
 Progress: Parameterizing module Video_RGB_Resampler
 Progress: Adding Video_DMA [altera_up_avalon_video_dma_controller 13.0]
 Progress: Parameterizing module Video_DMA
-Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
-Progress: Parameterizing module sdram
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module Pixel_Buffer_DMA
+Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Pixel_RGB_Resampler
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Info: de2_70.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
-Info: de2_70.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
-Info: de2_70.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
 Info: de2_70.Video_In_Decoder: Video In Stream: Format: 2592 x 1944 (default) with Colour: 8 (bits) x 1 (planes) (RGB Bayer Pattern)
 Info: de2_70.Bayer_Pattern_Resampler: Change in Resolution: 2592 x 1944 -> 1296 x 972
 Info: de2_70.Video_Clipper: Change in Resolution: 1296 x 972 -> 1280 x 960
 Info: de2_70.Video_Scaler: Change in Resolution: 1280 x 960 -> 640 x 240
 Info: de2_70.Video_RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 16 (bits) x 1 (planes)
+Info: de2_70.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: de2_70.Pixel_Scaler: Change in Resolution: 640 x 240 -> 640 x 480
+Info: de2_70.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
 Info: ip-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
@@ -63,24 +65,12 @@ Progress: Adding clk_0 [clock_source 13.0]
 Progress: Parameterizing module clk_0
 Progress: Adding CPU [altera_nios2_qsys 13.0]
 Progress: Parameterizing module CPU
+Progress: Adding vga_clk [altera_clock_bridge 13.0]
+Progress: Parameterizing module vga_clk
 Progress: Adding Onchip_Memory [altera_avalon_onchip_memory2 13.0.1.99.2]
 Progress: Parameterizing module Onchip_Memory
 Progress: Adding Clock_Signals [altera_up_clocks 13.0]
 Progress: Parameterizing module Clock_Signals
-Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
-Progress: Parameterizing module Pixel_Buffer_DMA
-Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
-Progress: Parameterizing module Pixel_RGB_Resampler
-Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
-Progress: Parameterizing module Pixel_Scaler
-Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
-Progress: Parameterizing module Dual_Clock_FIFO
-Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
-Progress: Parameterizing module VGA_Controller
-Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
-Progress: Parameterizing module Pixel_Buffer
-Progress: Adding VGA_Clk [altera_clock_bridge 13.0]
-Progress: Parameterizing module VGA_Clk
 Progress: Adding AV_Config [altera_up_avalon_audio_and_video_config 13.0]
 Progress: Parameterizing module AV_Config
 Progress: Adding Video_In_Decoder [altera_up_avalon_video_decoder 13.0]
@@ -95,32 +85,49 @@ Progress: Adding Video_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
 Progress: Parameterizing module Video_RGB_Resampler
 Progress: Adding Video_DMA [altera_up_avalon_video_dma_controller 13.0]
 Progress: Parameterizing module Video_DMA
-Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1.99.2]
-Progress: Parameterizing module sdram
+Progress: Adding Pixel_Buffer [altera_up_avalon_sram 13.0]
+Progress: Parameterizing module Pixel_Buffer
+Progress: Adding Pixel_Buffer_DMA [altera_up_avalon_video_pixel_buffer_dma 13.0]
+Progress: Parameterizing module Pixel_Buffer_DMA
+Progress: Adding Pixel_RGB_Resampler [altera_up_avalon_video_rgb_resampler 13.0]
+Progress: Parameterizing module Pixel_RGB_Resampler
+Progress: Adding Pixel_Scaler [altera_up_avalon_video_scaler 13.0]
+Progress: Parameterizing module Pixel_Scaler
+Progress: Adding Dual_Clock_FIFO [altera_up_avalon_video_dual_clock_buffer 13.0]
+Progress: Parameterizing module Dual_Clock_FIFO
+Progress: Adding VGA_Controller [altera_up_avalon_video_vga_controller 13.0]
+Progress: Parameterizing module VGA_Controller
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module SDRAM
+Progress: Adding JTAG_UART [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module JTAG_UART
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
-Info: de2_70.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
-Info: de2_70.Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
-Info: de2_70.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
 Info: de2_70.Video_In_Decoder: Video In Stream: Format: 2592 x 1944 (default) with Colour: 8 (bits) x 1 (planes) (RGB Bayer Pattern)
 Info: de2_70.Bayer_Pattern_Resampler: Change in Resolution: 2592 x 1944 -> 1296 x 972
 Info: de2_70.Video_Clipper: Change in Resolution: 1296 x 972 -> 1280 x 960
 Info: de2_70.Video_Scaler: Change in Resolution: 1280 x 960 -> 640 x 240
 Info: de2_70.Video_RGB_Resampler: RGB Resampling: 8 (bits) x 3 (planes) -> 16 (bits) x 1 (planes)
+Info: de2_70.Pixel_RGB_Resampler: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: de2_70.Pixel_Scaler: Change in Resolution: 640 x 240 -> 640 x 480
+Info: de2_70.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes)
 Info: de2_70: Generating de2_70 "de2_70" for QUARTUS_SYNTH
-Info: pipeline_bridge_swap_transform: After transform: 19 modules, 76 connections
+Info: pipeline_bridge_swap_transform: After transform: 20 modules, 80 connections
 Info: No custom instruction connections, skipping transform 
-Info: merlin_translator_transform: After transform: 30 modules, 120 connections
-Info: merlin_domain_transform: After transform: 50 modules, 253 connections
-Info: merlin_router_transform: After transform: 61 modules, 297 connections
-Info: merlin_burst_transform: After transform: 62 modules, 301 connections
-Info: reset_adaptation_transform: After transform: 65 modules, 239 connections
-Info: merlin_network_to_switch_transform: After transform: 86 modules, 285 connections
-Info: merlin_width_transform: After transform: 94 modules, 309 connections
-Info: merlin_mm_transform: After transform: 94 modules, 309 connections
-Info: merlin_interrupt_mapper_transform: After transform: 95 modules, 312 connections
+Info: merlin_translator_transform: After transform: 32 modules, 128 connections
+Info: merlin_domain_transform: After transform: 55 modules, 276 connections
+Info: merlin_router_transform: After transform: 67 modules, 324 connections
+Info: merlin_burst_transform: After transform: 68 modules, 328 connections
+Info: reset_adaptation_transform: After transform: 71 modules, 260 connections
+Info: merlin_network_to_switch_transform: After transform: 93 modules, 308 connections
+Info: merlin_width_transform: After transform: 97 modules, 320 connections
+Info: merlin_mm_transform: After transform: 97 modules, 320 connections
+Info: merlin_interrupt_mapper_transform: After transform: 98 modules, 323 connections
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
 Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
 Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
 Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
@@ -209,36 +216,24 @@ Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req 
 Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
 Warning: de2_70: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
 Info: CPU: Starting RTL generation for module 'de2_70_CPU'
-Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=de2_70_CPU --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7637_6348117276473116039.dir/0001_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7637_6348117276473116039.dir/0001_CPU_gen//de2_70_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
-Info: CPU: # 2018.04.16 11:40:00 (*) Starting Nios II generation
-Info: CPU: # 2018.04.16 11:40:00 (*)   Checking for plaintext license.
-Info: CPU: # 2018.04.16 11:40:01 (*)   Plaintext license not found.
-Info: CPU: # 2018.04.16 11:40:01 (*)   No license required to generate encrypted Nios II/e.
-Info: CPU: # 2018.04.16 11:40:01 (*)   Elaborating CPU configuration settings
-Info: CPU: # 2018.04.16 11:40:01 (*)   Creating all objects for CPU
-Info: CPU: # 2018.04.16 11:40:02 (*)   Generating RTL from CPU objects
-Info: CPU: # 2018.04.16 11:40:02 (*)   Creating plain-text RTL
-Info: CPU: # 2018.04.16 11:40:03 (*) Done Nios II generation
+Info: CPU:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=de2_70_CPU --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0001_CPU_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0001_CPU_gen//de2_70_CPU_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: CPU: # 2018.04.25 08:57:29 (*) Starting Nios II generation
+Info: CPU: # 2018.04.25 08:57:29 (*)   Checking for plaintext license.
+Info: CPU: # 2018.04.25 08:57:31 (*)   Plaintext license not found.
+Info: CPU: # 2018.04.25 08:57:31 (*)   No license required to generate encrypted Nios II/e.
+Info: CPU: # 2018.04.25 08:57:31 (*)   Elaborating CPU configuration settings
+Info: CPU: # 2018.04.25 08:57:31 (*)   Creating all objects for CPU
+Info: CPU: # 2018.04.25 08:57:32 (*)   Generating RTL from CPU objects
+Info: CPU: # 2018.04.25 08:57:32 (*)   Creating plain-text RTL
+Info: CPU: # 2018.04.25 08:57:34 (*) Done Nios II generation
 Info: CPU: Done RTL generation for module 'de2_70_CPU'
 Info: CPU: "de2_70" instantiated altera_nios2_qsys "CPU"
 Info: Onchip_Memory: Starting RTL generation for module 'de2_70_Onchip_Memory'
-Info: Onchip_Memory:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=de2_70_Onchip_Memory --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7637_6348117276473116039.dir/0002_Onchip_Memory_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7637_6348117276473116039.dir/0002_Onchip_Memory_gen//de2_70_Onchip_Memory_component_configuration.pl  --do_build_sim=0  ]
+Info: Onchip_Memory:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=de2_70_Onchip_Memory --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0002_Onchip_Memory_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0002_Onchip_Memory_gen//de2_70_Onchip_Memory_component_configuration.pl  --do_build_sim=0  ]
 Info: Onchip_Memory: Done RTL generation for module 'de2_70_Onchip_Memory'
 Info: Onchip_Memory: "de2_70" instantiated altera_avalon_onchip_memory2 "Onchip_Memory"
 Info: Clock_Signals: Starting Generation of Required Clocks for DE-Series Boards
 Info: Clock_Signals: "de2_70" instantiated altera_up_clocks "Clock_Signals"
-Info: Pixel_Buffer_DMA: Starting Generation of VGA Pixel Buffer
-Info: Pixel_Buffer_DMA: "de2_70" instantiated altera_up_avalon_video_pixel_buffer_dma "Pixel_Buffer_DMA"
-Info: Pixel_RGB_Resampler: Starting Generation of Video RGB Resampler
-Info: Pixel_RGB_Resampler: "de2_70" instantiated altera_up_avalon_video_rgb_resampler "Pixel_RGB_Resampler"
-Info: Pixel_Scaler: Starting Generation of Video Scaler
-Info: Pixel_Scaler: "de2_70" instantiated altera_up_avalon_video_scaler "Pixel_Scaler"
-Info: Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
-Info: Dual_Clock_FIFO: "de2_70" instantiated altera_up_avalon_video_dual_clock_buffer "Dual_Clock_FIFO"
-Info: VGA_Controller: Starting Generation of VGA Controller
-Info: VGA_Controller: "de2_70" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
-Info: Pixel_Buffer: Starting Generation of SRAM or SSRAM Controller
-Info: Pixel_Buffer: "de2_70" instantiated altera_up_avalon_sram "Pixel_Buffer"
 Info: AV_Config: Starting Generation of Audio and Video Config
 Info: AV_Config: "de2_70" instantiated altera_up_avalon_audio_and_video_config "AV_Config"
 Info: Video_In_Decoder: Starting Generation of Video In Decoder
@@ -249,17 +244,33 @@ Info: Video_Clipper: Starting generation of the video clipper
 Info: Video_Clipper: "de2_70" instantiated altera_up_avalon_video_clipper "Video_Clipper"
 Info: Video_Scaler: Starting Generation of Video Scaler
 Info: Video_Scaler: "de2_70" instantiated altera_up_avalon_video_scaler "Video_Scaler"
-Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_up_video_scaler_shrink.v
-Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_up_video_scaler_multiply_width.v
-Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_up_video_scaler_multiply_height.v
 Info: Video_RGB_Resampler: Starting Generation of Video RGB Resampler
 Info: Video_RGB_Resampler: "de2_70" instantiated altera_up_avalon_video_rgb_resampler "Video_RGB_Resampler"
 Info: Video_DMA: Starting Generation of Video DMA Controller
 Info: Video_DMA: "de2_70" instantiated altera_up_avalon_video_dma_controller "Video_DMA"
-Info: sdram: Starting RTL generation for module 'de2_70_sdram'
-Info: sdram:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=de2_70_sdram --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7637_6348117276473116039.dir/0017_sdram_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7637_6348117276473116039.dir/0017_sdram_gen//de2_70_sdram_component_configuration.pl  --do_build_sim=0  ]
-Info: sdram: Done RTL generation for module 'de2_70_sdram'
-Info: sdram: "de2_70" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: Pixel_Buffer: Starting Generation of SRAM or SSRAM Controller
+Info: Pixel_Buffer: "de2_70" instantiated altera_up_avalon_sram "Pixel_Buffer"
+Info: Pixel_Buffer_DMA: Starting Generation of VGA Pixel Buffer
+Info: Pixel_Buffer_DMA: "de2_70" instantiated altera_up_avalon_video_pixel_buffer_dma "Pixel_Buffer_DMA"
+Info: Pixel_RGB_Resampler: Starting Generation of Video RGB Resampler
+Info: Pixel_RGB_Resampler: "de2_70" instantiated altera_up_avalon_video_rgb_resampler "Pixel_RGB_Resampler"
+Info: Pixel_Scaler: Starting Generation of Video Scaler
+Info: Pixel_Scaler: "de2_70" instantiated altera_up_avalon_video_scaler "Pixel_Scaler"
+Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_up_video_scaler_shrink.v
+Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_up_video_scaler_multiply_width.v
+Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_up_video_scaler_multiply_height.v
+Info: Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info: Dual_Clock_FIFO: "de2_70" instantiated altera_up_avalon_video_dual_clock_buffer "Dual_Clock_FIFO"
+Info: VGA_Controller: Starting Generation of VGA Controller
+Info: VGA_Controller: "de2_70" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info: SDRAM: Starting RTL generation for module 'de2_70_SDRAM'
+Info: SDRAM:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=de2_70_SDRAM --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0017_SDRAM_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0017_SDRAM_gen//de2_70_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SDRAM: Done RTL generation for module 'de2_70_SDRAM'
+Info: SDRAM: "de2_70" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: JTAG_UART: Starting RTL generation for module 'de2_70_JTAG_UART'
+Info: JTAG_UART:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=de2_70_JTAG_UART --dir=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0018_JTAG_UART_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/FRANCI~1/AppData/Local/Temp/alt7646_3888396967212106368.dir/0018_JTAG_UART_gen//de2_70_JTAG_UART_component_configuration.pl  --do_build_sim=0  ]
+Info: JTAG_UART: Done RTL generation for module 'de2_70_JTAG_UART'
+Info: JTAG_UART: "de2_70" instantiated altera_avalon_jtag_uart "JTAG_UART"
 Info: CPU_instruction_master_translator: "de2_70" instantiated altera_merlin_master_translator "CPU_instruction_master_translator"
 Info: CPU_jtag_debug_module_translator: "de2_70" instantiated altera_merlin_slave_translator "CPU_jtag_debug_module_translator"
 Info: CPU_instruction_master_translator_avalon_universal_master_0_agent: "de2_70" instantiated altera_merlin_master_agent "CPU_instruction_master_translator_avalon_universal_master_0_agent"
@@ -267,32 +278,30 @@ Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent: "de2_70" 
 Info: CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "de2_70" instantiated altera_avalon_sc_fifo "CPU_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
 Info: addr_router: "de2_70" instantiated altera_merlin_router "addr_router"
 Info: addr_router_001: "de2_70" instantiated altera_merlin_router "addr_router_001"
-Info: addr_router_002: "de2_70" instantiated altera_merlin_router "addr_router_002"
 Info: id_router: "de2_70" instantiated altera_merlin_router "id_router"
 Info: id_router_002: "de2_70" instantiated altera_merlin_router "id_router_002"
 Info: id_router_003: "de2_70" instantiated altera_merlin_router "id_router_003"
-Info: id_router_004: "de2_70" instantiated altera_merlin_router "id_router_004"
+Info: addr_router_002: "de2_70" instantiated altera_merlin_router "addr_router_002"
+Info: id_router_007: "de2_70" instantiated altera_merlin_router "id_router_007"
 Info: burst_adapter: "de2_70" instantiated altera_merlin_burst_adapter "burst_adapter"
 Info: rst_controller: "de2_70" instantiated altera_reset_controller "rst_controller"
 Info: cmd_xbar_demux: "de2_70" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
 Info: cmd_xbar_demux_001: "de2_70" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
-Info: cmd_xbar_demux_002: "de2_70" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
 Info: cmd_xbar_mux: "de2_70" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
-Info: cmd_xbar_mux_002: "de2_70" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
-Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_arbitrator.sv
-Info: cmd_xbar_mux_003: "de2_70" instantiated altera_merlin_multiplexer "cmd_xbar_mux_003"
-Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_xbar_demux: "de2_70" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
-Info: rsp_xbar_demux_002: "de2_70" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
-Info: rsp_xbar_demux_004: "de2_70" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_004"
+Info: rsp_xbar_demux_003: "de2_70" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
 Info: rsp_xbar_mux: "de2_70" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
 Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_xbar_mux_001: "de2_70" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
 Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_demux_002: "de2_70" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux_007: "de2_70" instantiated altera_merlin_multiplexer "cmd_xbar_mux_007"
+Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux_007: "de2_70" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_007"
 Info: width_adapter: "de2_70" instantiated altera_merlin_width_adapter "width_adapter"
 Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_address_alignment.sv
 Info: Reusing file C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70/synthesis/submodules/altera_merlin_burst_uncompressor.sv
 Info: irq_mapper: "de2_70" instantiated altera_irq_mapper "irq_mapper"
-Info: de2_70: Done de2_70" with 45 modules, 208 files, 3960559 bytes
+Info: de2_70: Done de2_70" with 45 modules, 219 files, 4113372 bytes
 Info: ip-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

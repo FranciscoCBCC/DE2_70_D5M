@@ -36,7 +36,7 @@ SUBDESIGN altsyncram_vju
 	wren_a	:	input;
 ) 
 VARIABLE 
-	ram_block5a0 : cycloneii_ram_block
+	ram_block14a0 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -65,7 +65,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a1 : cycloneii_ram_block
+	ram_block14a1 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -94,7 +94,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a2 : cycloneii_ram_block
+	ram_block14a2 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -123,7 +123,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a3 : cycloneii_ram_block
+	ram_block14a3 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -152,7 +152,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a4 : cycloneii_ram_block
+	ram_block14a4 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -181,7 +181,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a5 : cycloneii_ram_block
+	ram_block14a5 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -210,7 +210,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a6 : cycloneii_ram_block
+	ram_block14a6 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -239,7 +239,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a7 : cycloneii_ram_block
+	ram_block14a7 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -268,7 +268,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a8 : cycloneii_ram_block
+	ram_block14a8 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -297,7 +297,7 @@ VARIABLE
 			PORT_B_READ_ENABLE_WRITE_ENABLE_CLOCK = "clock1",
 			RAM_BLOCK_TYPE = "AUTO"
 		);
-	ram_block5a9 : cycloneii_ram_block
+	ram_block14a9 : cycloneii_ram_block
 		WITH (
 			CONNECTIVITY_CHECKING = "OFF",
 			LOGICAL_RAM_NAME = "ALTSYNCRAM",
@@ -330,26 +330,26 @@ VARIABLE
 	address_b_wire[6..0]	: WIRE;
 
 BEGIN 
-	ram_block5a[9..0].clk0 = clock0;
-	ram_block5a[9..0].clk1 = clock1;
-	ram_block5a[9..0].ena0 = wren_a;
-	ram_block5a[9..0].portaaddr[] = ( address_a_wire[6..0]);
-	ram_block5a[0].portadatain[] = ( data_a[0..0]);
-	ram_block5a[1].portadatain[] = ( data_a[1..1]);
-	ram_block5a[2].portadatain[] = ( data_a[2..2]);
-	ram_block5a[3].portadatain[] = ( data_a[3..3]);
-	ram_block5a[4].portadatain[] = ( data_a[4..4]);
-	ram_block5a[5].portadatain[] = ( data_a[5..5]);
-	ram_block5a[6].portadatain[] = ( data_a[6..6]);
-	ram_block5a[7].portadatain[] = ( data_a[7..7]);
-	ram_block5a[8].portadatain[] = ( data_a[8..8]);
-	ram_block5a[9].portadatain[] = ( data_a[9..9]);
-	ram_block5a[9..0].portawe = wren_a;
-	ram_block5a[9..0].portbaddr[] = ( address_b_wire[6..0]);
-	ram_block5a[9..0].portbaddrstall = addressstall_b;
-	ram_block5a[9..0].portbrewe = B"1111111111";
+	ram_block14a[9..0].clk0 = clock0;
+	ram_block14a[9..0].clk1 = clock1;
+	ram_block14a[9..0].ena0 = wren_a;
+	ram_block14a[9..0].portaaddr[] = ( address_a_wire[6..0]);
+	ram_block14a[0].portadatain[] = ( data_a[0..0]);
+	ram_block14a[1].portadatain[] = ( data_a[1..1]);
+	ram_block14a[2].portadatain[] = ( data_a[2..2]);
+	ram_block14a[3].portadatain[] = ( data_a[3..3]);
+	ram_block14a[4].portadatain[] = ( data_a[4..4]);
+	ram_block14a[5].portadatain[] = ( data_a[5..5]);
+	ram_block14a[6].portadatain[] = ( data_a[6..6]);
+	ram_block14a[7].portadatain[] = ( data_a[7..7]);
+	ram_block14a[8].portadatain[] = ( data_a[8..8]);
+	ram_block14a[9].portadatain[] = ( data_a[9..9]);
+	ram_block14a[9..0].portawe = wren_a;
+	ram_block14a[9..0].portbaddr[] = ( address_b_wire[6..0]);
+	ram_block14a[9..0].portbaddrstall = addressstall_b;
+	ram_block14a[9..0].portbrewe = B"1111111111";
 	address_a_wire[] = address_a[];
 	address_b_wire[] = address_b[];
-	q_b[] = ( ram_block5a[9..0].portbdataout[0..0]);
+	q_b[] = ( ram_block14a[9..0].portbdataout[0..0]);
 END;
 --VALID FILE

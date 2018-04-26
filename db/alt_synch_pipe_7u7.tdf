@@ -30,11 +30,11 @@ SUBDESIGN alt_synch_pipe_7u7
 	q[7..0]	:	output;
 ) 
 VARIABLE 
-	dffpipe16 : dffpipe_1v8;
+	dffpipe17 : dffpipe_1v8;
 
 BEGIN 
-	dffpipe16.clock = clock;
-	dffpipe16.d[] = d[];
-	q[] = dffpipe16.q[];
+	dffpipe17.clock = clock;
+	dffpipe17.d[] = d[];
+	q[] = dffpipe17.q[];
 END;
 --VALID FILE

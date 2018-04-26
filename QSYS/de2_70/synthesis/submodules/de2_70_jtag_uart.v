@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module de2_70_jtag_uart_sim_scfifo_w (
+module de2_70_JTAG_UART_sim_scfifo_w (
                                        // inputs:
                                         clk,
                                         fifo_wdata,
@@ -74,7 +74,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module de2_70_jtag_uart_scfifo_w (
+module de2_70_JTAG_UART_scfifo_w (
                                    // inputs:
                                     clk,
                                     fifo_clear,
@@ -107,7 +107,7 @@ module de2_70_jtag_uart_scfifo_w (
 
 //synthesis translate_off
 //////////////// SIMULATION-ONLY CONTENTS
-  de2_70_jtag_uart_sim_scfifo_w the_de2_70_jtag_uart_sim_scfifo_w
+  de2_70_JTAG_UART_sim_scfifo_w the_de2_70_JTAG_UART_sim_scfifo_w
     (
       .clk         (clk),
       .fifo_FF     (fifo_FF),
@@ -159,7 +159,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module de2_70_jtag_uart_sim_scfifo_r (
+module de2_70_JTAG_UART_sim_scfifo_r (
                                        // inputs:
                                         clk,
                                         fifo_rd,
@@ -237,7 +237,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module de2_70_jtag_uart_scfifo_r (
+module de2_70_JTAG_UART_scfifo_r (
                                    // inputs:
                                     clk,
                                     fifo_clear,
@@ -272,7 +272,7 @@ module de2_70_jtag_uart_scfifo_r (
 
 //synthesis translate_off
 //////////////// SIMULATION-ONLY CONTENTS
-  de2_70_jtag_uart_sim_scfifo_r the_de2_70_jtag_uart_sim_scfifo_r
+  de2_70_JTAG_UART_sim_scfifo_r the_de2_70_JTAG_UART_sim_scfifo_r
     (
       .clk        (clk),
       .fifo_EF    (fifo_EF),
@@ -324,7 +324,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module de2_70_jtag_uart (
+module de2_70_JTAG_UART (
                           // inputs:
                            av_address,
                            av_chipselect,
@@ -401,7 +401,7 @@ module de2_70_jtag_uart (
   assign rd_wfifo = r_ena & ~wfifo_empty;
   assign wr_rfifo = t_ena & ~rfifo_full;
   assign fifo_clear = ~rst_n;
-  de2_70_jtag_uart_scfifo_w the_de2_70_jtag_uart_scfifo_w
+  de2_70_JTAG_UART_scfifo_w the_de2_70_JTAG_UART_scfifo_w
     (
       .clk         (clk),
       .fifo_FF     (fifo_FF),
@@ -414,7 +414,7 @@ module de2_70_jtag_uart (
       .wfifo_used  (wfifo_used)
     );
 
-  de2_70_jtag_uart_scfifo_r the_de2_70_jtag_uart_scfifo_r
+  de2_70_JTAG_UART_scfifo_r the_de2_70_JTAG_UART_scfifo_r
     (
       .clk        (clk),
       .fifo_EF    (fifo_EF),
@@ -550,7 +550,7 @@ module de2_70_jtag_uart (
 
 //synthesis translate_on
 //synthesis read_comments_as_HDL on
-//  alt_jtag_atlantic de2_70_jtag_uart_alt_jtag_atlantic
+//  alt_jtag_atlantic de2_70_JTAG_UART_alt_jtag_atlantic
 //    (
 //      .clk (clk),
 //      .r_dat (r_dat),
@@ -563,10 +563,10 @@ module de2_70_jtag_uart (
 //      .t_pause (t_pause)
 //    );
 //
-//  defparam de2_70_jtag_uart_alt_jtag_atlantic.INSTANCE_ID = 0,
-//           de2_70_jtag_uart_alt_jtag_atlantic.LOG2_RXFIFO_DEPTH = 6,
-//           de2_70_jtag_uart_alt_jtag_atlantic.LOG2_TXFIFO_DEPTH = 6,
-//           de2_70_jtag_uart_alt_jtag_atlantic.SLD_AUTO_INSTANCE_INDEX = "YES";
+//  defparam de2_70_JTAG_UART_alt_jtag_atlantic.INSTANCE_ID = 0,
+//           de2_70_JTAG_UART_alt_jtag_atlantic.LOG2_RXFIFO_DEPTH = 6,
+//           de2_70_JTAG_UART_alt_jtag_atlantic.LOG2_TXFIFO_DEPTH = 6,
+//           de2_70_JTAG_UART_alt_jtag_atlantic.SLD_AUTO_INSTANCE_INDEX = "YES";
 //
 //  always @(posedge clk or negedge rst_n)
 //    begin

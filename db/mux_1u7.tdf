@@ -28,12 +28,12 @@ SUBDESIGN mux_1u7
 VARIABLE 
 	result_node[0..0]	: WIRE;
 	sel_node[0..0]	: WIRE;
-	w_data649w[1..0]	: WIRE;
+	w_data393w[1..0]	: WIRE;
 
 BEGIN 
 	result[] = result_node[];
-	result_node[] = ( ((sel_node[] & w_data649w[1..1]) # ((! sel_node[]) & w_data649w[0..0])));
+	result_node[] = ( ((sel_node[] & w_data393w[1..1]) # ((! sel_node[]) & w_data393w[0..0])));
 	sel_node[] = ( sel[0..0]);
-	w_data649w[] = ( data[1..0]);
+	w_data393w[] = ( data[1..0]);
 END;
 --VALID FILE

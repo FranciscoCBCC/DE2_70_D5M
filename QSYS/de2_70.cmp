@@ -2,29 +2,7 @@
 		port (
 			clk_clk                                             : in    std_logic                     := 'X';             -- clk
 			reset_reset_n                                       : in    std_logic                     := 'X';             -- reset_n
-			vga_CLK                                             : out   std_logic;                                        -- CLK
-			vga_HS                                              : out   std_logic;                                        -- HS
-			vga_VS                                              : out   std_logic;                                        -- VS
-			vga_BLANK                                           : out   std_logic;                                        -- BLANK
-			vga_SYNC                                            : out   std_logic;                                        -- SYNC
-			vga_R                                               : out   std_logic_vector(9 downto 0);                     -- R
-			vga_G                                               : out   std_logic_vector(9 downto 0);                     -- G
-			vga_B                                               : out   std_logic_vector(9 downto 0);                     -- B
-			sram_DQ                                             : inout std_logic_vector(31 downto 0) := (others => 'X'); -- DQ
-			sram_DPA                                            : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- DPA
-			sram_ADDR                                           : out   std_logic_vector(18 downto 0);                    -- ADDR
-			sram_ADSC_N                                         : out   std_logic;                                        -- ADSC_N
-			sram_ADSP_N                                         : out   std_logic;                                        -- ADSP_N
-			sram_ADV_N                                          : out   std_logic;                                        -- ADV_N
-			sram_BE_N                                           : out   std_logic_vector(3 downto 0);                     -- BE_N
-			sram_CE1_N                                          : out   std_logic;                                        -- CE1_N
-			sram_CE2                                            : out   std_logic;                                        -- CE2
-			sram_CE3_N                                          : out   std_logic;                                        -- CE3_N
-			sram_GW_N                                           : out   std_logic;                                        -- GW_N
-			sram_OE_N                                           : out   std_logic;                                        -- OE_N
-			sram_WE_N                                           : out   std_logic;                                        -- WE_N
-			sram_CLK                                            : out   std_logic;                                        -- CLK
-			vga_clk_out_clk_clk                                 : out   std_logic;                                        -- clk
+			sdram_clk                                           : out   std_logic;                                        -- clk
 			av_config_external_interface_SDAT                   : inout std_logic                     := 'X';             -- SDAT
 			av_config_external_interface_SCLK                   : out   std_logic;                                        -- SCLK
 			video_in_decoder_external_interface_PIXEL_CLK       : in    std_logic                     := 'X';             -- PIXEL_CLK
@@ -32,6 +10,28 @@
 			video_in_decoder_external_interface_FRAME_VALID     : in    std_logic                     := 'X';             -- FRAME_VALID
 			video_in_decoder_external_interface_pixel_clk_reset : in    std_logic                     := 'X';             -- pixel_clk_reset
 			video_in_decoder_external_interface_PIXEL_DATA      : in    std_logic_vector(11 downto 0) := (others => 'X'); -- PIXEL_DATA
+			pixel_buffer_external_interface_DQ                  : inout std_logic_vector(31 downto 0) := (others => 'X'); -- DQ
+			pixel_buffer_external_interface_DPA                 : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- DPA
+			pixel_buffer_external_interface_ADDR                : out   std_logic_vector(18 downto 0);                    -- ADDR
+			pixel_buffer_external_interface_ADSC_N              : out   std_logic;                                        -- ADSC_N
+			pixel_buffer_external_interface_ADSP_N              : out   std_logic;                                        -- ADSP_N
+			pixel_buffer_external_interface_ADV_N               : out   std_logic;                                        -- ADV_N
+			pixel_buffer_external_interface_BE_N                : out   std_logic_vector(3 downto 0);                     -- BE_N
+			pixel_buffer_external_interface_CE1_N               : out   std_logic;                                        -- CE1_N
+			pixel_buffer_external_interface_CE2                 : out   std_logic;                                        -- CE2
+			pixel_buffer_external_interface_CE3_N               : out   std_logic;                                        -- CE3_N
+			pixel_buffer_external_interface_GW_N                : out   std_logic;                                        -- GW_N
+			pixel_buffer_external_interface_OE_N                : out   std_logic;                                        -- OE_N
+			pixel_buffer_external_interface_WE_N                : out   std_logic;                                        -- WE_N
+			pixel_buffer_external_interface_CLK                 : out   std_logic;                                        -- CLK
+			vga_controller_external_interface_CLK               : out   std_logic;                                        -- CLK
+			vga_controller_external_interface_HS                : out   std_logic;                                        -- HS
+			vga_controller_external_interface_VS                : out   std_logic;                                        -- VS
+			vga_controller_external_interface_BLANK             : out   std_logic;                                        -- BLANK
+			vga_controller_external_interface_SYNC              : out   std_logic;                                        -- SYNC
+			vga_controller_external_interface_R                 : out   std_logic_vector(9 downto 0);                     -- R
+			vga_controller_external_interface_G                 : out   std_logic_vector(9 downto 0);                     -- G
+			vga_controller_external_interface_B                 : out   std_logic_vector(9 downto 0);                     -- B
 			sdram_wire_addr                                     : out   std_logic_vector(12 downto 0);                    -- addr
 			sdram_wire_ba                                       : out   std_logic_vector(1 downto 0);                     -- ba
 			sdram_wire_cas_n                                    : out   std_logic;                                        -- cas_n
@@ -40,8 +40,7 @@
 			sdram_wire_dq                                       : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
 			sdram_wire_dqm                                      : out   std_logic_vector(1 downto 0);                     -- dqm
 			sdram_wire_ras_n                                    : out   std_logic;                                        -- ras_n
-			sdram_wire_we_n                                     : out   std_logic;                                        -- we_n
-			sdram_clk_clk                                       : out   std_logic                                         -- clk
+			sdram_wire_we_n                                     : out   std_logic                                         -- we_n
 		);
 	end component de2_70;
 

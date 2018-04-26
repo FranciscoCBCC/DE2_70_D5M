@@ -1,0 +1,7 @@
+
+**** Clean-only build of configuration Nios II for project D5M_Camera_bsp ****
+
+make clean 
+[BSP clean complete]
+
+**** Build Finished ****
