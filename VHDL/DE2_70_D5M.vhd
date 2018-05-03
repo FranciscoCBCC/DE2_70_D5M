@@ -6,9 +6,13 @@ USE ieee.std_logic_unsigned.ALL;
 ENTITY DE2_70_D5M IS
 	PORT (
 			CLOCK_50                                        		     : IN    STD_LOGIC;  						             		   -- clk
-			KEY			                                    		     : IN    STD_LOGIC_VECTOR(3 DOWNTO 0);		               -- reset
-			GPIO_1																	  : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);						   -- GPIO_1	
-			--GPIO_CLKIN_N1														  	  : IN    STD_LOGIC; -- VERIFICAR NECESSIDADE DISSO
+			KEY			                                    		     : IN    STD_LOGIC_VECTOR(0 DOWNTO 0);		               -- reset
+			GPIO_1																	  : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);						   -- GPIO_1
+			
+			IO_CLKINN1																  : IN STD_LOGIC;
+			
+			CCD_DATA : in std_logic_vector(11 downto 0); --NOVO
+			
 			DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DQ                  : INOUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => 'X'); -- DQ
 			DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DPA                 : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0)  := (OTHERS => 'X'); -- DPA
 			DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_ADDR                : OUT   STD_LOGIC_VECTOR(18 DOWNTO 0);                    -- ADDR
@@ -52,14 +56,19 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
         port (
             clk_clk                                             : in    STD_LOGIC                     := 'X';             -- clk
             reset_reset_n                                       : in    STD_LOGIC                     := 'X';             -- reset_n
-				sdram_clk                                           : out   std_logic;                                        -- clk
+				
+				
+				
             av_config_external_interface_SDAT                   : inout STD_LOGIC                     := 'X';             -- SDAT
             av_config_external_interface_SCLK                   : out   STD_LOGIC;                                        -- SCLK
             video_in_decoder_external_interface_PIXEL_CLK       : in    STD_LOGIC                     := 'X';             -- PIXEL_CLK
             video_in_decoder_external_interface_LINE_VALID      : in    STD_LOGIC                     := 'X';             -- LINE_VALID
             video_in_decoder_external_interface_FRAME_VALID     : in    STD_LOGIC                     := 'X';             -- FRAME_VALID
-            video_in_decoder_external_interface_pixel_clk_reset : in    STD_LOGIC                     := 'X';             -- pixel_clk_reset
+				
+            video_in_decoder_external_interface_pixel_clk_reset : in    STD_LOGIC                     := 'X';             -- pixel_clk_reset VERIFICAR NECESSIDADE DISTO
+				
             video_in_decoder_external_interface_PIXEL_DATA      : in    STD_LOGIC_VECTOR(11 downto 0) := (others => 'X'); -- PIXEL_DATA
+				
             pixel_buffer_external_interface_DQ                  : inout STD_LOGIC_VECTOR(31 downto 0) := (others => 'X'); -- DQ
             pixel_buffer_external_interface_DPA                 : inout STD_LOGIC_VECTOR(3 downto 0)  := (others => 'X'); -- DPA
             pixel_buffer_external_interface_ADDR                : out   STD_LOGIC_VECTOR(18 downto 0);                    -- ADDR
@@ -74,6 +83,7 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
             pixel_buffer_external_interface_OE_N                : out   STD_LOGIC;                                        -- OE_N
             pixel_buffer_external_interface_WE_N                : out   STD_LOGIC;                                        -- WE_N
             pixel_buffer_external_interface_CLK                 : out   STD_LOGIC;                                        -- CLK
+				
             vga_controller_external_interface_CLK               : out   STD_LOGIC;                                        -- CLK
             vga_controller_external_interface_HS                : out   STD_LOGIC;                                        -- HS
             vga_controller_external_interface_VS                : out   STD_LOGIC;                                        -- VS
@@ -82,6 +92,8 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
             vga_controller_external_interface_R                 : out   STD_LOGIC_VECTOR(9 downto 0);                     -- R
             vga_controller_external_interface_G                 : out   STD_LOGIC_VECTOR(9 downto 0);                     -- G
             vga_controller_external_interface_B                 : out   STD_LOGIC_VECTOR(9 downto 0);                     -- B
+				
+				sdram_clk                                           : out   std_logic;                                        -- clk
 				sdram_wire_addr                                     : out   std_logic_vector(12 downto 0);                    -- addr
             sdram_wire_ba                                       : out   std_logic_vector(1 downto 0);                     -- ba
             sdram_wire_cas_n                                    : out   std_logic;                                        -- cas_n
@@ -95,32 +107,23 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
     end component;
 
 		  BEGIN
-		  GPIO_1(16) <= CLOCK_50;
+		  --GPIO_1(17) <= '1'; --reset NOVO
+		  --GPIO_1(16) <= CLOCK_50;
+		  
 		  NiosII : de2_70
         port map (
             clk_clk                                             => CLOCK_50,                                          				    --                               	clk.clk
             reset_reset_n                                       => KEY(0),							                                        --                               reset.reset_n
-				sdram_clk                                           => DE2_70_SDRAM_CLK,                                           		 --                               sdram.clk
 				
             av_config_external_interface_SDAT                   => GPIO_1(23),      --VERIFICAR SE ESTÁ CORRETO							 --        av_config_external_interface.SDAT
             av_config_external_interface_SCLK                   => GPIO_1(24),		--VERIFICAR SE ESTÁ CORRETO				   		 --                                    .SCLK
-            video_in_decoder_external_interface_PIXEL_CLK       => GPIO_1(0),    	--VERIFICAR SE ESTÁ CORRETO				     		 -- video_in_decoder_external_interface.PIXEL_CLK
+            video_in_decoder_external_interface_PIXEL_CLK       => IO_CLKINN1,    	--VERIFICAR SE ESTÁ CORRETO				     		 -- video_in_decoder_external_interface.PIXEL_CLK
             video_in_decoder_external_interface_LINE_VALID      => GPIO_1(21),   	--VERIFICAR SE ESTÁ CORRETO	    					 --                                    .LINE_VALID
             video_in_decoder_external_interface_FRAME_VALID     => GPIO_1(22),		--VERIFICAR SE ESTÁ CORRETO				  		    --                                    .FRAME_VALID
-            video_in_decoder_external_interface_pixel_clk_reset => '1', 		 																		 --                                    .pixel_clk_reset
+            video_in_decoder_external_interface_pixel_clk_reset => GPIO_1(17), 		--VERIFICAR NECESSIDADE DISTO		 																		 --                                    .pixel_clk_reset 
 				           
-				video_in_decoder_external_interface_PIXEL_DATA(0)      => GPIO_1(13),   --ESTÁ CORRETO   						 					 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(1)      => GPIO_1(12),	--ESTÁ CORRETO							 					 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(2)      => GPIO_1(11),	--ESTÁ CORRETO 							 				 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(3)      => GPIO_1(10),	--ESTÁ CORRETO							 					 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(4)      => GPIO_1(9),		--ESTÁ CORRETO											    --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(5)      => GPIO_1(8),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(6)      => GPIO_1(7),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(7)      => GPIO_1(6),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(8)      => GPIO_1(5),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(9)      => GPIO_1(4),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(10)     => GPIO_1(3),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
-				video_in_decoder_external_interface_PIXEL_DATA(11)     => GPIO_1(1),		--ESTÁ CORRETO												 --                                    .PIXEL_DATA
+				
+				video_in_decoder_external_interface_PIXEL_DATA => CCD_DATA, --NOVO
 				
             pixel_buffer_external_interface_DQ                  => DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DQ, 		                   --     pixel_buffer_external_interface.DQ
             pixel_buffer_external_interface_DPA                 => DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DPA,        		          --                                    .DPA
@@ -136,6 +139,7 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
             pixel_buffer_external_interface_OE_N                => DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_OE_N,                		 --                                    .OE_N
             pixel_buffer_external_interface_WE_N                => DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_WE_N,                		 --                                    .WE_N
             pixel_buffer_external_interface_CLK                 => DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK,                 		 --                                    .CLK
+				
             vga_controller_external_interface_CLK               => DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK,              		 --   vga_controller_external_interface.CLK
             vga_controller_external_interface_HS                => DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_HS,               		 --                                    .HS
             vga_controller_external_interface_VS                => DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_VS,       		          --                                    .VS
@@ -144,6 +148,8 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
             vga_controller_external_interface_R                 => DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_R,     		             --                                    .R
             vga_controller_external_interface_G                 => DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_G,      		             --                                    .G
             vga_controller_external_interface_B                 => DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_B,             		    --                                    .B
+				
+				sdram_clk                                           => DE2_70_SDRAM_CLK,                                           		 --                               sdram.clk
 				sdram_wire_addr                                     => DE2_70_SDRAM_WIRE_ADDR,                                     		 --                          sdram_wire.addr
             sdram_wire_ba                                       => DE2_70_SDRAM_WIRE_BA,                                      		 --                                    .ba
             sdram_wire_cas_n                                    => DE2_70_SDRAM_WIRE_CAS_N,                                    		 --                                    .cas_n

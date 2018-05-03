@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for DE2_70_D5M
-Thu Apr 26 11:46:58 2018
+Thu May 03 12:22:56 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -93,8 +93,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                ; Status ; Read at                  ;
 +--------------------------------------------------------------+--------+--------------------------+
-; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Thu Apr 26 11:46:58 2018 ;
-; QSYS/de2_70/synthesis/submodules/de2_70_CPU.sdc              ; OK     ; Thu Apr 26 11:46:58 2018 ;
+; QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc ; OK     ; Thu May 03 12:22:56 2018 ;
+; QSYS/de2_70/synthesis/submodules/de2_70_CPU.sdc              ; OK     ; Thu May 03 12:22:56 2018 ;
 +--------------------------------------------------------------+--------+--------------------------+
 
 
@@ -163,7 +163,6 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 2.878 ; 2.878 ;       ;
-; CLOCK_50   ; GPIO_1[16]                                   ; 6.071 ;       ;       ; 6.071 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -175,7 +174,6 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 2.878 ; 2.878 ;       ;
-; CLOCK_50   ; GPIO_1[16]                                   ; 6.071 ;       ;       ; 6.071 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -229,7 +227,6 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 1.455 ;       ;       ; 1.455 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 1.456 ;       ;       ; 1.456 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 1.560 ; 1.560 ;       ;
-; CLOCK_50   ; GPIO_1[16]                                   ; 3.235 ;       ;       ; 3.235 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -241,7 +238,6 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 1.455 ;       ;       ; 1.455 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 1.456 ;       ;       ; 1.456 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 1.560 ; 1.560 ;       ;
-; CLOCK_50   ; GPIO_1[16]                                   ; 3.235 ;       ;       ; 3.235 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -265,7 +261,6 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 2.770 ;       ;       ; 2.770 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 2.878 ; 2.878 ;       ;
-; CLOCK_50   ; GPIO_1[16]                                   ; 6.071 ;       ;       ; 6.071 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -277,7 +272,6 @@ No paths to report.
 ; CLOCK_50   ; DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_CLK   ; 1.455 ;       ;       ; 1.455 ;
 ; CLOCK_50   ; DE2_70_SDRAM_CLK                             ; 1.456 ;       ;       ; 1.456 ;
 ; CLOCK_50   ; DE2_70_VGA_CONTROLLER_EXTERNAL_INTERFACE_CLK ;       ; 1.560 ; 1.560 ;       ;
-; CLOCK_50   ; GPIO_1[16]                                   ; 3.235 ;       ;       ; 3.235 ;
 +------------+----------------------------------------------+-------+-------+-------+-------+
 
 
@@ -306,10 +300,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 2     ; 2    ;
-; Unconstrained Input Ports       ; 50    ; 50   ;
-; Unconstrained Input Port Paths  ; 53    ; 53   ;
-; Unconstrained Output Ports      ; 137   ; 137  ;
-; Unconstrained Output Port Paths ; 542   ; 542  ;
+; Unconstrained Input Ports       ; 61    ; 61   ;
+; Unconstrained Input Port Paths  ; 85    ; 85   ;
+; Unconstrained Output Ports      ; 136   ; 136  ;
+; Unconstrained Output Port Paths ; 541   ; 541  ;
 +---------------------------------+-------+------+
 
 
@@ -319,7 +313,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 26 11:46:57 2018
+    Info: Processing started: Thu May 03 12:22:55 2018
 Info: Command: quartus_sta DE2_70_D5M -c DE2_70_D5M
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -364,16 +358,10 @@ Info (332164): Evaluating HDL-embedded SDC commands
     Info (332165): Entity sld_jtag_hub
         Info (332166): create_clock -name altera_reserved_tck [get_ports {altera_reserved_tck}] -period 10MHz   
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
-Warning (332174): Ignored filter at qsta_default_script.tcl(1038): *ws_dgrp|dffpipe_2v8:dffpipe20|dffe21a* could not be matched with a clock or keeper or register or port or pin or cell or partition
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1038): Argument <to> is not an object ID
-    Info (332050): read_sdc
-Warning (332174): Ignored filter at qsta_default_script.tcl(1038): *rs_dgwp|dffpipe_1v8:dffpipe17|dffe18a* could not be matched with a clock or keeper or register or port or pin or cell or partition
-Warning (332049): Ignored set_false_path at qsta_default_script.tcl(1038): Argument <to> is not an object ID
-    Info (332050): read_sdc
 Info (332104): Reading SDC File: 'QSYS/de2_70/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'QSYS/de2_70/synthesis/submodules/de2_70_CPU.sdc'
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: GPIO_1[0] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: IO_CLKINN1 was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: NiosII|clock_signals|DE_Clock_Generator_System|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: NiosII|clock_signals|DE_Clock_Generator_System|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
@@ -392,7 +380,7 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
-Warning (332060): Node: GPIO_1[0] was determined to be a clock but was found without an associated clock assignment.
+Warning (332060): Node: IO_CLKINN1 was determined to be a clock but was found without an associated clock assignment.
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Node: NiosII|clock_signals|DE_Clock_Generator_System|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
     Warning (332056): Node: NiosII|clock_signals|DE_Clock_Generator_System|pll|clk[1] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
@@ -408,9 +396,9 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 510 megabytes
-    Info: Processing ended: Thu Apr 26 11:46:58 2018
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 512 megabytes
+    Info: Processing ended: Thu May 03 12:22:56 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
