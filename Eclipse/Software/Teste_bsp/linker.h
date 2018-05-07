@@ -4,7 +4,7 @@
  * Machine generated for CPU 'CPU' in SOPC Builder design 'de2_70'
  * SOPC Builder design path: C:/Users/Francisco/Desktop/DE2_70_D5M/QSYS/de2_70.sopcinfo
  *
- * Generated: Thu May 03 12:27:32 GMT-03:00 2018
+ * Generated: Mon May 07 10:31:53 GMT-03:00 2018
  */
 
 /*

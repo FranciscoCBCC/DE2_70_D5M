@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE2_70_D5M
-Thu May 03 12:22:28 2018
+Mon May 07 10:30:06 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -407,16 +407,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 03 12:22:28 2018           ;
+; Analysis & Synthesis Status        ; Successful - Mon May 07 10:30:06 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; DE2_70_D5M                                      ;
 ; Top-level Entity Name              ; DE2_70_D5M                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 4,435                                           ;
-;     Total combinational functions  ; 3,840                                           ;
+; Total logic elements               ; 4,439                                           ;
+;     Total combinational functions  ; 3,844                                           ;
 ;     Dedicated logic registers      ; 2,714                                           ;
 ; Total registers                    ; 2714                                            ;
-; Total pins                         ; 194                                             ;
+; Total pins                         ; 178                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 202,224                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -509,21 +509,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -720,23 +714,23 @@ applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                   ;
 +---------------------------------------------+-----------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 4,435                                                                                   ;
+; Estimated Total logic elements              ; 4,439                                                                                   ;
 ;                                             ;                                                                                         ;
-; Total combinational functions               ; 3840                                                                                    ;
+; Total combinational functions               ; 3844                                                                                    ;
 ; Logic element usage by number of LUT inputs ;                                                                                         ;
-;     -- 4 input functions                    ; 1687                                                                                    ;
-;     -- 3 input functions                    ; 1218                                                                                    ;
-;     -- <=2 input functions                  ; 935                                                                                     ;
+;     -- 4 input functions                    ; 1695                                                                                    ;
+;     -- 3 input functions                    ; 1212                                                                                    ;
+;     -- <=2 input functions                  ; 937                                                                                     ;
 ;                                             ;                                                                                         ;
 ; Logic elements by mode                      ;                                                                                         ;
-;     -- normal mode                          ; 3420                                                                                    ;
+;     -- normal mode                          ; 3424                                                                                    ;
 ;     -- arithmetic mode                      ; 420                                                                                     ;
 ;                                             ;                                                                                         ;
 ; Total registers                             ; 2714                                                                                    ;
 ;     -- Dedicated logic registers            ; 2714                                                                                    ;
 ;     -- I/O registers                        ; 0                                                                                       ;
 ;                                             ;                                                                                         ;
-; I/O pins                                    ; 194                                                                                     ;
+; I/O pins                                    ; 178                                                                                     ;
 ; Total memory bits                           ; 202224                                                                                  ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                                       ;
 ; Total PLLs                                  ; 1                                                                                       ;
@@ -744,8 +738,8 @@ applicable agreement for further details.
 ;                                             ;                                                                                         ;
 ; Maximum fan-out node                        ; de2_70:NiosII|de2_70_Clock_Signals:clock_signals|altpll:DE_Clock_Generator_System|_clk0 ;
 ; Maximum fan-out                             ; 2707                                                                                    ;
-; Total fan-out                               ; 25284                                                                                   ;
-; Average fan-out                             ; 3.61                                                                                    ;
+; Total fan-out                               ; 25302                                                                                   ;
+; Average fan-out                             ; 3.62                                                                                    ;
 +---------------------------------------------+-----------------------------------------------------------------------------------------+
 
 
@@ -754,7 +748,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                                                                           ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                             ; Library Name ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DE2_70_D5M                                                                                                                                                                          ; 3840 (1)          ; 2714 (0)     ; 202224      ; 0            ; 0       ; 0         ; 194  ; 0            ; |DE2_70_D5M                                                                                                                                                                                                                                                                                                     ; work         ;
+; |DE2_70_D5M                                                                                                                                                                          ; 3844 (1)          ; 2714 (0)     ; 202224      ; 0            ; 0       ; 0         ; 178  ; 0            ; |DE2_70_D5M                                                                                                                                                                                                                                                                                                     ; work         ;
 ;    |de2_70:NiosII|                                                                                                                                                                   ; 3679 (0)          ; 2617 (0)     ; 202224      ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|de2_70:NiosII                                                                                                                                                                                                                                                                                       ; de2_70       ;
 ;       |de2_70_AV_Config:av_config|                                                                                                                                                   ; 259 (79)          ; 191 (60)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|de2_70:NiosII|de2_70_AV_Config:av_config                                                                                                                                                                                                                                                            ; de2_70       ;
 ;          |altera_up_av_config_auto_init:AV_Config_Auto_Init|                                                                                                                         ; 9 (9)             ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|de2_70:NiosII|de2_70_AV_Config:av_config|altera_up_av_config_auto_init:AV_Config_Auto_Init                                                                                                                                                                                                          ; de2_70       ;
@@ -970,9 +964,9 @@ applicable agreement for further details.
 ;          |altera_merlin_width_adapter:width_adapter_002|                                                                                                                             ; 53 (53)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|de2_70:NiosII|de2_70_width_adapter_002:width_adapter_002|altera_merlin_width_adapter:width_adapter_002                                                                                                                                                                                              ; de2_70       ;
 ;       |de2_70_width_adapter_003:width_adapter_003|                                                                                                                                   ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|de2_70:NiosII|de2_70_width_adapter_003:width_adapter_003                                                                                                                                                                                                                                            ; de2_70       ;
 ;          |altera_merlin_width_adapter:width_adapter_003|                                                                                                                             ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|de2_70:NiosII|de2_70_width_adapter_003:width_adapter_003|altera_merlin_width_adapter:width_adapter_003                                                                                                                                                                                              ; de2_70       ;
-;    |sld_hub:auto_hub|                                                                                                                                                                ; 160 (1)           ; 97 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|sld_hub:auto_hub                                                                                                                                                                                                                                                                                    ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                                                                                                 ; 159 (119)         ; 97 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                       ; work         ;
-;          |sld_rom_sr:hub_info_reg|                                                                                                                                                   ; 23 (23)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                               ; work         ;
+;    |sld_hub:auto_hub|                                                                                                                                                                ; 164 (1)           ; 97 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|sld_hub:auto_hub                                                                                                                                                                                                                                                                                    ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                                                                                                                                 ; 163 (122)         ; 97 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                                                                                                                                                       ; work         ;
+;          |sld_rom_sr:hub_info_reg|                                                                                                                                                   ; 24 (24)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                                                                                                                                                               ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                                                                                                                                 ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                                                                                                                                                             ; work         ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -2610,7 +2604,7 @@ Encoding Type:  One-Hot
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][1]                                                                                                                                                                                                                              ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][3]                                                                                                                                                                                                                              ;
 ; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; Yes        ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[3]                                                                                                                                                                                                                                       ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]                                                                                                                                                                                                                                ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]                                                                                                                                                                                                                                ;
 ; 28:1               ; 4 bits    ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; Yes        ; |DE2_70_D5M|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                                                                                                                                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -10005,9 +9999,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu May 03 12:22:05 2018
+    Info: Processing started: Mon May 07 10:29:42 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE2_70_D5M -c DE2_70_D5M
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file qsys/de2_70/synthesis/de2_70.vhd
     Info (12022): Found design unit 1: de2_70-rtl
     Info (12023): Found entity 1: de2_70
@@ -11056,11 +11050,8 @@ Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "de2_70:NiosII|de2_70_sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo|mem" is uninferred due to inappropriate RAM size
 Warning (12241): 17 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[24]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[20]" and its non-tri-state driver.
 Warning (13039): The following bidir pins have no drivers
-    Warning (13040): Bidir "GPIO_1[17]" has no driver
-    Warning (13040): Bidir "GPIO_1[21]" has no driver
-    Warning (13040): Bidir "GPIO_1[22]" has no driver
     Warning (13040): Bidir "GPIO_1[0]" has no driver
     Warning (13040): Bidir "GPIO_1[1]" has no driver
     Warning (13040): Bidir "GPIO_1[2]" has no driver
@@ -11073,14 +11064,16 @@ Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "GPIO_1[9]" has no driver
     Warning (13040): Bidir "GPIO_1[10]" has no driver
     Warning (13040): Bidir "GPIO_1[11]" has no driver
+    Warning (13040): Bidir "GPIO_1[14]" has no driver
+    Warning (13040): Bidir "GPIO_1[17]" has no driver
+    Warning (13040): Bidir "GPIO_1[18]" has no driver
     Warning (13040): Bidir "GPIO_1[12]" has no driver
     Warning (13040): Bidir "GPIO_1[13]" has no driver
-    Warning (13040): Bidir "GPIO_1[14]" has no driver
-    Warning (13040): Bidir "GPIO_1[15]" has no driver
     Warning (13040): Bidir "GPIO_1[16]" has no driver
-    Warning (13040): Bidir "GPIO_1[18]" has no driver
-    Warning (13040): Bidir "GPIO_1[19]" has no driver
-    Warning (13040): Bidir "GPIO_1[20]" has no driver
+    Warning (13040): Bidir "GPIO_1[21]" has no driver
+    Warning (13040): Bidir "GPIO_1[22]" has no driver
+    Warning (13040): Bidir "GPIO_1[23]" has no driver
+    Warning (13040): Bidir "GPIO_1[24]" has no driver
     Warning (13040): Bidir "GPIO_1[25]" has no driver
     Warning (13040): Bidir "GPIO_1[26]" has no driver
     Warning (13040): Bidir "GPIO_1[27]" has no driver
@@ -11088,14 +11081,13 @@ Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "GPIO_1[29]" has no driver
     Warning (13040): Bidir "GPIO_1[30]" has no driver
     Warning (13040): Bidir "GPIO_1[31]" has no driver
-    Warning (13040): Bidir "GPIO_1[32]" has no driver
-    Warning (13040): Bidir "GPIO_1[33]" has no driver
-    Warning (13040): Bidir "GPIO_1[34]" has no driver
-    Warning (13040): Bidir "GPIO_1[35]" has no driver
+Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The pin "GPIO_1[15]" is fed by VCC
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "GPIO_1[24]~synth"
+    Warning (13010): Node "GPIO_1[15]~synth"
+    Warning (13010): Node "GPIO_1[20]~synth"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_ADSP_N" is stuck at VCC
     Warning (13410): Pin "DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_ADV_N" is stuck at VCC
@@ -11110,23 +11102,18 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (144001): Generated suppressed messages file C:/Users/Francisco/Desktop/DE2_70_D5M/output_files/DE2_70_D5M.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CCD_DATA[0]"
-    Warning (15610): No output dependent on input pin "CCD_DATA[1]"
-    Warning (15610): No output dependent on input pin "CCD_DATA[2]"
-    Warning (15610): No output dependent on input pin "CCD_DATA[3]"
-Info (21057): Implemented 5113 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 18 input pins
+Info (21057): Implemented 5100 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 92 output pins
-    Info (21060): Implemented 88 bidirectional pins
-    Info (21061): Implemented 4672 logic cells
+    Info (21060): Implemented 84 bidirectional pins
+    Info (21061): Implemented 4675 logic cells
     Info (21064): Implemented 241 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 274 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 268 warnings
     Info: Peak virtual memory: 656 megabytes
-    Info: Processing ended: Thu May 03 12:22:29 2018
+    Info: Processing ended: Mon May 07 10:30:06 2018
     Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+

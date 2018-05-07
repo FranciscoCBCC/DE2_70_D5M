@@ -7,11 +7,11 @@ ENTITY DE2_70_D5M IS
 	PORT (
 			CLOCK_50                                        		     : IN    STD_LOGIC;  						             		   -- clk
 			KEY			                                    		     : IN    STD_LOGIC_VECTOR(0 DOWNTO 0);		               -- reset
-			GPIO_1																	  : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);						   -- GPIO_1
 			
+			---RESOLVER PROBLEMA
+			GPIO_1																	  : INOUT STD_LOGIC_VECTOR(31 DOWNTO 0);						   -- GPIO_1
 			IO_CLKINN1																  : IN STD_LOGIC;
-			
-			CCD_DATA : in std_logic_vector(11 downto 0); --NOVO
+			---
 			
 			DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DQ                  : INOUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => 'X'); -- DQ
 			DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DPA                 : INOUT STD_LOGIC_VECTOR(3 DOWNTO 0)  := (OTHERS => 'X'); -- DPA
@@ -58,16 +58,15 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
             reset_reset_n                                       : in    STD_LOGIC                     := 'X';             -- reset_n
 				
 				
-				
+				---RESOLVER PROBLEMA
             av_config_external_interface_SDAT                   : inout STD_LOGIC                     := 'X';             -- SDAT
             av_config_external_interface_SCLK                   : out   STD_LOGIC;                                        -- SCLK
             video_in_decoder_external_interface_PIXEL_CLK       : in    STD_LOGIC                     := 'X';             -- PIXEL_CLK
             video_in_decoder_external_interface_LINE_VALID      : in    STD_LOGIC                     := 'X';             -- LINE_VALID
             video_in_decoder_external_interface_FRAME_VALID     : in    STD_LOGIC                     := 'X';             -- FRAME_VALID
-				
-            video_in_decoder_external_interface_pixel_clk_reset : in    STD_LOGIC                     := 'X';             -- pixel_clk_reset VERIFICAR NECESSIDADE DISTO
-				
+            video_in_decoder_external_interface_pixel_clk_reset : in    STD_LOGIC                     := 'X';             -- pixel_clk_reset VERIFICAR NECESSIDADE DISTO	
             video_in_decoder_external_interface_PIXEL_DATA      : in    STD_LOGIC_VECTOR(11 downto 0) := (others => 'X'); -- PIXEL_DATA
+				---
 				
             pixel_buffer_external_interface_DQ                  : inout STD_LOGIC_VECTOR(31 downto 0) := (others => 'X'); -- DQ
             pixel_buffer_external_interface_DPA                 : inout STD_LOGIC_VECTOR(3 downto 0)  := (others => 'X'); -- DPA
@@ -107,23 +106,35 @@ ARCHITECTURE Structure OF DE2_70_D5M IS
     end component;
 
 		  BEGIN
-		  --GPIO_1(17) <= '1'; --reset NOVO
-		  --GPIO_1(16) <= CLOCK_50;
+				GPIO_1(15)<='1'; 					--TRIGGER
 		  
 		  NiosII : de2_70
         port map (
-            clk_clk                                             => CLOCK_50,                                          				    --                               	clk.clk
-            reset_reset_n                                       => KEY(0),							                                        --                               reset.reset_n
+            clk_clk                                             => CLOCK_50,                    --                               	clk.clk
+            reset_reset_n                                       => KEY(0),							   --                               reset.reset_n
 				
-            av_config_external_interface_SDAT                   => GPIO_1(23),      --VERIFICAR SE ESTÁ CORRETO							 --        av_config_external_interface.SDAT
-            av_config_external_interface_SCLK                   => GPIO_1(24),		--VERIFICAR SE ESTÁ CORRETO				   		 --                                    .SCLK
-            video_in_decoder_external_interface_PIXEL_CLK       => IO_CLKINN1,    	--VERIFICAR SE ESTÁ CORRETO				     		 -- video_in_decoder_external_interface.PIXEL_CLK
-            video_in_decoder_external_interface_LINE_VALID      => GPIO_1(21),   	--VERIFICAR SE ESTÁ CORRETO	    					 --                                    .LINE_VALID
-            video_in_decoder_external_interface_FRAME_VALID     => GPIO_1(22),		--VERIFICAR SE ESTÁ CORRETO				  		    --                                    .FRAME_VALID
-            video_in_decoder_external_interface_pixel_clk_reset => GPIO_1(17), 		--VERIFICAR NECESSIDADE DISTO		 																		 --                                    .pixel_clk_reset 
-				           
+				---RESOLVER PROBLEMA
+            av_config_external_interface_SDAT                   => GPIO_1(19),      				--        av_config_external_interface.SDAT
+            av_config_external_interface_SCLK                   => GPIO_1(20),						--                                    .SCLK
+            video_in_decoder_external_interface_PIXEL_CLK       => IO_CLKINN1,    					-- video_in_decoder_external_interface.PIXEL_CLK
+            video_in_decoder_external_interface_LINE_VALID      => GPIO_1(17),   					--                                    .LINE_VALID
+            video_in_decoder_external_interface_FRAME_VALID     => GPIO_1(18),						--                                    .FRAME_VALID
+            video_in_decoder_external_interface_pixel_clk_reset => GPIO_1(14), 						--VERIFICAR SE ESTÁ CORRETO, NO PROJETO EM VERILOG ESTÁ COM DLY_RST_1 																		 --                                    .pixel_clk_reset 				
 				
-				video_in_decoder_external_interface_PIXEL_DATA => CCD_DATA, --NOVO
+				video_in_decoder_external_interface_PIXEL_DATA(0) => GPIO_1(11),
+				video_in_decoder_external_interface_PIXEL_DATA(1) => GPIO_1(10),
+				video_in_decoder_external_interface_PIXEL_DATA(2) => GPIO_1(9),
+				video_in_decoder_external_interface_PIXEL_DATA(3) => GPIO_1(8),
+				video_in_decoder_external_interface_PIXEL_DATA(4) => GPIO_1(7),
+				video_in_decoder_external_interface_PIXEL_DATA(5) => GPIO_1(6),
+				video_in_decoder_external_interface_PIXEL_DATA(6) => GPIO_1(5),
+				video_in_decoder_external_interface_PIXEL_DATA(7) => GPIO_1(4),
+				video_in_decoder_external_interface_PIXEL_DATA(8) => GPIO_1(3),
+				video_in_decoder_external_interface_PIXEL_DATA(9) => GPIO_1(2),
+				video_in_decoder_external_interface_PIXEL_DATA(10) => GPIO_1(1),
+				video_in_decoder_external_interface_PIXEL_DATA(11) => GPIO_1(0),
+				--assign	GPIO_CLKOUT_N1	=	CCD_MCLK;
+				---
 				
             pixel_buffer_external_interface_DQ                  => DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DQ, 		                   --     pixel_buffer_external_interface.DQ
             pixel_buffer_external_interface_DPA                 => DE2_70_PIXEL_BUFFER_EXTERNAL_INTERFACE_DPA,        		          --                                    .DPA

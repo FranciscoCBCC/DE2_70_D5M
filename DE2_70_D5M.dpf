@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="CCD_DATA[11]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[10]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[9]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[8]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[7]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[6]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[5]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[4]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[3]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[2]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[1]" source="Pin Planner" >
+		</pin>
+		<pin name="CCD_DATA[0]" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>
